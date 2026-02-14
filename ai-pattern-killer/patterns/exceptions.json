@@ -1,0 +1,6 @@
+{
+  "allowed_words": [],
+  "allowed_phrases": [],
+  "allowed_structures": [],
+  "notes": "Add items here when the user explicitly approves something the detector flags. This prevents the same false positive from recurring."
+}

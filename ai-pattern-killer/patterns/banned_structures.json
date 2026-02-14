@@ -1,0 +1,266 @@
+[
+  {
+    "pattern": "Three or more consecutive bullet points where each starts with a bold word followed by a colon and explanation",
+    "why": "the classic AI list format — instantly recognizable as machine-generated",
+    "fix": "Vary the structure. Some bullets without bold. Mix in full sentences. Break the rhythm.",
+    "priority": 5
+  },
+  {
+    "pattern": "Opening paragraph that restates the user's question or topic before answering",
+    "why": "filler behavior that sounds like a customer service bot or homework assignment",
+    "fix": "Start with the answer or an insight. Cut the restatement entirely.",
+    "priority": 5
+  },
+  {
+    "pattern": "Three-part parallel structure in consecutive sentences (X does A. Y does B. Z does C.)",
+    "why": "mechanical rhythm that screams template generation",
+    "fix": "Break parallelism. Combine two points. Vary sentence length. Change structure mid-list.",
+    "priority": 4
+  },
+  {
+    "pattern": "Sentences opening with gerund phrases ('By leveraging...', 'By implementing...', 'By focusing on...')",
+    "why": "AI loves these as sentence starters for sounding purposeful",
+    "fix": "Lead with the result instead. Use 'If you...' or 'When you...' or just state the outcome directly.",
+    "priority": 4
+  },
+  {
+    "pattern": "'Not only X, but also Y' construction",
+    "why": "AI balancing act that humans rarely use in casual writing",
+    "fix": "Say both things directly. 'X and Y' or split into two sentences.",
+    "priority": 3
+  },
+  {
+    "pattern": "Every section ending with a one-sentence summary or conclusion",
+    "why": "AI tidiness reflex — real writing lets sections just end",
+    "fix": "Drop the summary. Let the last substantive point be the ending.",
+    "priority": 3
+  },
+  {
+    "pattern": "Three or more consecutive sentences starting with the same word",
+    "why": "unintentional anaphora — AI repeats sentence openers without rhetorical purpose",
+    "fix": "Vary openers. Combine sentences. Start with different parts of speech.",
+    "priority": 3
+  },
+  {
+    "pattern": "'Here's why that matters:' followed by an explanation",
+    "why": "AI transition that inserts itself between the point and its significance",
+    "fix": "Delete the transition. Let the significance speak for itself.",
+    "priority": 3
+  },
+  {
+    "pattern": "Excessive em dashes used as parenthetical asides in every paragraph",
+    "why": "AI overuses em dashes as a 'casual' marker — one per piece is fine, five is a tell",
+    "fix": "Use parentheses sometimes. Or make it a separate sentence. Max one em dash per 3-4 paragraphs.",
+    "priority": 3
+  },
+  {
+    "pattern": "'Let's break this down:' followed by a numbered list",
+    "why": "AI meta-commentary about its own process — just present the information",
+    "fix": "Delete the meta-commentary. Present the numbered list directly or restructure as prose.",
+    "priority": 3
+  },
+  {
+    "pattern": "Conclusion paragraph beginning with 'In conclusion', 'To sum up', or 'In summary'",
+    "why": "academic convention that reads as formulaic in most content",
+    "fix": "End with your strongest point. Or a forward-looking statement. Or just stop.",
+    "priority": 3
+  },
+  {
+    "pattern": "Three or more consecutive paragraphs that are all 3-4 sentences long and within 15 words of each other in total length",
+    "why": "real writing has varied paragraph length — AI defaults to uniform blocks of 3-4 sentences each",
+    "fix": "Break at least one paragraph into a single-sentence paragraph for emphasis. Let another run to 5-6 sentences. Target a mix: 1 sentence, 3 sentences, 5 sentences, 2 sentences — not 3, 3, 3, 3.",
+    "priority": 2
+  },
+  {
+    "pattern": "Lists that always contain exactly three items (Rule of Three)",
+    "why": "AI defaults to three items every time — real lists have 2, 4, 5, or 7 items depending on what needs saying",
+    "fix": "Vary list lengths. If you only have two points, list two. If you have five, list five. Stop rounding to three.",
+    "priority": 3
+  },
+  {
+    "pattern": "Excessive formal transition words (Moreover, Furthermore, Additionally, Nevertheless, In addition) appearing every 1-2 paragraphs",
+    "why": "AI uses these as paragraph glue — real writing flows without announcing transitions",
+    "fix": "Cut most of them. One per 3-4 paragraphs max. Use shorter connectors ('And,' 'But,' 'So') or just let the next paragraph follow naturally.",
+    "priority": 4
+  },
+  {
+    "pattern": "Contrast or negation-reframe framing: 'It's not X, it's Y' or 'This isn't about ___, it's about ___'",
+    "why": "AI rhetorical trick that feels manufactured and overly clever — humans just state Y",
+    "fix": "State Y directly. Drop the negation setup. If the contrast matters, show it through examples, not through sentence structure tricks.",
+    "priority": 3
+  },
+  {
+    "pattern": "Urgency or era framing: 'We're entering an era where...', 'In an age of...', 'As we stand at the crossroads of...'",
+    "why": "sounds dramatic and dated immediately — content should feel true in 2 years, not just today",
+    "fix": "Drop the framing. Start with the specific thing that's happening. 'More teams are using X' beats 'We're entering an era of X.'",
+    "priority": 4
+  },
+  {
+    "pattern": "Identity shaming or tier-sorting: 'Average developers do X, senior developers do Y' or 'Most people make this mistake, but top performers...'",
+    "why": "sorts readers into tiers to manipulate — teach the better approach without ranking people",
+    "fix": "Teach the better approach directly. 'Here's a better way to handle X' instead of 'beginners do X but experts do Y.'",
+    "priority": 3
+  },
+  {
+    "pattern": "Five or more consecutive sentences that are all within the same word-count band (12-20 words each), with no short (4-8 word) or long (25+ word) sentences breaking the rhythm",
+    "why": "AI defaults to medium-length sentences — real writing mixes short punches (4-8 words), standard flow (12-20 words), and occasional long complex thoughts (25+ words)",
+    "fix": "Insert at least one short sentence (under 8 words) per paragraph. Let one sentence per section run long (25+ words) when the thought requires it. Target rhythm: short, medium, medium, long, short — not medium, medium, medium, medium, medium.",
+    "priority": 3
+  },
+  {
+    "pattern": "A paragraph that describes three or more related items, options, or steps in running prose instead of using a bullet or numbered list",
+    "why": "AI often describes lists in paragraph form to sound more 'written' — but real writers use bullets when listing 3+ items because it's clearer",
+    "fix": "Convert to a bullet list for 3+ related items. Use numbered list when order matters. Keep the intro sentence as prose, then break into list items.",
+    "priority": 2
+  },
+  {
+    "pattern": "An entire piece (5+ paragraphs) with zero formatting variation — no bullet lists, no numbered lists, no bold text, no tables, no headers within the body",
+    "why": "AI produces 'essay mode' by default — uniform paragraphs of prose with no visual variety. Real writers use formatting as a communication tool.",
+    "fix": "Add at least one list (bullet or numbered) per 4-5 paragraphs. Use bold for key terms or phrases on first definition. Use a table if comparing 2+ options across 2+ dimensions. Formatting should serve clarity, not decoration.",
+    "priority": 2
+  },
+  {
+    "pattern": "Use of vague quantity words ('several', 'various', 'numerous', 'a number of', 'many', 'significant amount of') when a specific number could be stated or reasonably estimated",
+    "why": "AI hedges with vague quantities because it can't commit to specifics — real writers say '3 services' not 'several services', '200ms latency' not 'slow response'",
+    "fix": "Replace with a specific number if known. If not known, use a concrete estimate ('about 5', 'roughly 200ms', '3-4 options'). If truly unknowable, cut the vague quantifier entirely — 'services' is better than 'several services' when you don't know how many.",
+    "priority": 2
+  },
+  {
+    "pattern": "Technical or specialized terms introduced without bold formatting, especially on first use, when the term is central to the argument",
+    "why": "AI treats all text as equal weight — real writers use bold to signal 'this term matters, remember it'. Lack of inline emphasis makes everything feel flat.",
+    "fix": "Bold key terms on first use when defining or introducing them. Bold key phrases within body paragraphs that carry the central argument. Don't over-bold — 1-2 bold items per section maximum.",
+    "priority": 2
+  },
+  {
+    "pattern": "A section that compares two or more options, tools, approaches, or features across multiple dimensions using only prose paragraphs",
+    "why": "AI describes comparisons in paragraphs because tables feel 'less writerly' — but tables are faster to scan and more honest about trade-offs",
+    "fix": "If comparing 2+ things across 2+ attributes, use a table. Keep the introduction and conclusion as prose. The table replaces the comparison paragraphs, not the analysis.",
+    "priority": 2
+  },
+  {
+    "pattern": "Terminal participial phrases trailing at the end of sentences — ', fostering innovation,' ', creating opportunities,' ', revealing insights,' ', enabling teams to...'",
+    "why": "the second most reliable AI structural tell after bold-colon lists — AI uses trailing participial phrases at 2-5x the human rate to pack extra meaning into sentence endings",
+    "fix": "Split into two sentences. Or lead with the participial action as the main verb. 'This fostered innovation' or 'The result: teams started innovating.' Never let more than one trailing participial phrase appear per 3 paragraphs.",
+    "priority": 4
+  },
+  {
+    "pattern": "Missing contractions throughout the piece — 'do not' instead of 'don't', 'it is' instead of 'it's', 'we have' instead of 'we've' consistently across non-emphatic contexts",
+    "why": "creates an unnaturally formal register — humans use contractions in all but the most formal writing. Consistent non-contraction is a reliable AI formality tell",
+    "fix": "Contract everything except where emphasis requires the full form ('Do NOT skip this step'). If fewer than 60% of contractable pairs are contracted, flag the piece.",
+    "priority": 3
+  },
+  {
+    "pattern": "Excessive hedging density — three or more hedging words or phrases within a single paragraph ('might', 'could', 'arguably', 'potentially', 'possibly', 'perhaps', 'it seems', 'to some extent')",
+    "why": "AI hedges at 3.2x the human rate — packing multiple hedges into one paragraph signals uncertainty-by-default rather than genuine qualification",
+    "fix": "Keep at most one hedge per paragraph. For the rest, commit to the statement or remove the sentence. If genuinely uncertain, say 'I'm not sure about this' once rather than hedging every clause.",
+    "priority": 3
+  },
+  {
+    "pattern": "False balance — presenting 'on one hand / on the other hand' balanced perspectives even when evidence strongly favors one side, or reflexively adding 'however' caveats to every claim",
+    "why": "AI defaults to both-sidesism because it avoids taking positions — human writers with expertise take stances and defend them",
+    "fix": "If the evidence supports one side, say so. Reserve balanced framing for genuinely contested topics. Having an opinion is not bias — it's expertise.",
+    "priority": 3
+  },
+  {
+    "pattern": "Excessive positivity and criticism avoidance — a piece that evaluates something (tool, approach, product, idea) without mentioning any downsides, limitations, trade-offs, or contexts where it fails",
+    "why": "AI avoids negative assessment by default — everything becomes an 'opportunity'. Real analysis acknowledges failure modes and limitations",
+    "fix": "Add at least one honest limitation, trade-off, or 'when not to use this' section. If reviewing something, mention what it does poorly. Credibility comes from acknowledging downsides.",
+    "priority": 3
+  },
+  {
+    "pattern": "Nominalization — using abstract noun forms instead of concrete verbs: 'perform an analysis' instead of 'analyze', 'engage in implementation' instead of 'implement', 'provide facilitation of' instead of 'facilitate', 'the utilization of' instead of 'using'",
+    "why": "creates static, bureaucratic prose — nominalizations hide the actor and the action behind abstract nouns. AI defaults to this register because it sounds 'formal'",
+    "fix": "Convert noun phrases back to verb-driven sentences. 'We analyzed the data' not 'An analysis of the data was performed.' Find the buried verb and make it the main verb of the sentence.",
+    "priority": 4
+  },
+  {
+    "pattern": "Regression to the mean — replacing specific, unusual, or memorable details with generic positive descriptions: a specific invention becomes 'groundbreaking work', a named technique becomes 'innovative approach', a concrete outcome becomes 'significant impact'",
+    "why": "AI flattens specificity into generic praise — the most interesting details get replaced with vague positivity. This is the opposite of good writing",
+    "fix": "Preserve the specific detail. If the original says 'invented the first transistor radio', keep that — don't generalize to 'made groundbreaking contributions to electronics.' Specifics are what make writing memorable.",
+    "priority": 4
+  },
+  {
+    "pattern": "Over-cohesion and explicit over-signposting — every paragraph opening explicitly signals its relationship to the previous one ('Building on this,' 'Following from the above,' 'As mentioned,' 'With this in mind,' 'To that end,')",
+    "why": "AI over-connects every paragraph because it treats text as a chain. Human writers allow gaps and trust readers to make connections without signposting every transition",
+    "fix": "Remove at least half of explicit transitions. Let some paragraphs start with their own topic sentence without referencing what came before. If paragraph B logically follows paragraph A, the reader can see that without being told.",
+    "priority": 4
+  },
+  {
+    "pattern": "Circular repetition in conclusions — the final paragraph restates every point made in the piece instead of adding a new insight, ending with a specific detail, or looking forward",
+    "why": "AI treats conclusions as mandatory summaries. Human writing often ends with the strongest specific point, a forward-looking question, or simply stops when the argument is complete",
+    "fix": "End with your strongest specific point, a question for the reader, or a forward-looking statement. Do not restate the introduction. If you've made 5 points, the conclusion should not list all 5 again.",
+    "priority": 3
+  },
+  {
+    "pattern": "Heading overuse — excessive H3/H4 sub-headings where flowing paragraphs would be more natural, resulting in a high heading-to-content ratio (a heading every 1-2 paragraphs in a short piece)",
+    "why": "AI fragments writing into tiny headed sections because it treats structure as a substitute for flow. A 500-word piece does not need 6 headings",
+    "fix": "Use headings only for genuine topic shifts. Short pieces (under 800 words) need at most 2-3 headings. Let paragraphs flow between related ideas without a heading for each one.",
+    "priority": 2
+  },
+  {
+    "pattern": "Single-word affirmation openers — responses or paragraphs that begin with 'Certainly!', 'Absolutely!', 'Great question!', 'Definitely!', 'Of course!' as standalone sentence starters before the actual content",
+    "why": "chatbot behavior pattern — no human writer begins a paragraph with 'Certainly!' followed by the actual response. This is a customer service AI tell",
+    "fix": "Delete the affirmation entirely. Start with the actual content. If agreement is needed, weave it into the first sentence naturally: 'Yeah, that's right — here's why...' instead of 'Absolutely! Here's why...'",
+    "priority": 5
+  },
+  {
+    "pattern": "Manipulative command framing — 'Stop doing X. Start doing Y.' or 'If you're not doing X, you're already behind.' or 'X is dead. Y is the future.' as rhetorical devices to create urgency",
+    "why": "engagement-bait framing that AI learns from viral content — manipulates through fear of missing out rather than teaching through value",
+    "fix": "Teach the better approach on its own merits. 'Here's why Y works well' instead of 'Stop doing X.' Let the reader decide what to stop doing based on the evidence.",
+    "priority": 3
+  },
+  {
+    "pattern": "Engagement bait framing — 'Most people do X. The few who succeed do Y.' or 'Here's what separates the best from the rest' or '99% of people get this wrong'",
+    "why": "viral content formula that AI absorbs from training data — creates artificial scarcity of knowledge and sorts readers into winners/losers. Related to but broader than identity shaming.",
+    "fix": "Present the information directly without the sorting framing. 'A better approach is Y' instead of 'Most people do X but winners do Y.' Respect the reader's intelligence.",
+    "priority": 4
+  },
+  {
+    "pattern": "Vague attribution — 'Research shows', 'Studies have found', 'Experts agree', 'According to research' without naming a specific study, researcher, or institution",
+    "why": "AI uses phantom citations to add authority. Real writers name their sources or link to them. Vague attribution is worse than no attribution because it creates false confidence",
+    "fix": "Name the source. 'A 2024 MIT study found...' or 'According to [researcher name]...' If you don't have a specific source, either find one or drop the appeal to authority and state the claim on its own merit.",
+    "priority": 4
+  },
+  {
+    "pattern": "Copula avoidance — using elaborate verbs ('serves as,' 'stands as,' 'boasts,' 'features,' 'marks,' 'represents,' 'constitutes') instead of simple 'is,' 'are,' 'has,' or 'was'",
+    "why": "one of the most reliable AI tells — AI avoids simple copula verbs because they feel 'boring' and substitutes dramatic or promotional verbs. Humans default to 'is' and 'has'",
+    "fix": "Replace with the simple copula. 'The library serves as a community hub' becomes 'The library is a community hub.' Only keep the elaborate verb if the action is genuinely dynamic.",
+    "priority": 5
+  },
+  {
+    "pattern": "Elegant variation / synonym cycling — referring to the same entity by a different name in every mention to avoid repetition (e.g., 'the protagonist' then 'the main character' then 'the central figure' then 'our hero' in one passage)",
+    "why": "AI over-applies synonym substitution due to repetition penalty. Human writers repeat the clearest term and use pronouns. Synonym cycling creates confusion about whether different terms refer to the same or different things",
+    "fix": "Pick the clearest term and reuse it. Use pronouns for variety instead of synonym chains.",
+    "priority": 4
+  },
+  {
+    "pattern": "False ranges — 'from X to Y' constructions where X and Y aren't on a meaningful spectrum ('from seasoned professionals to curious beginners,' 'from ancient times to the modern era,' 'from small startups to large enterprises')",
+    "why": "AI uses 'from X to Y' to imply breadth and universality without saying anything specific. The range is either obvious (everyone) or meaningless (things not on the same scale)",
+    "fix": "Drop the range framing. Say who you mean. 'For any team size' is more honest than 'from small startups to large enterprises.'",
+    "priority": 3
+  },
+  {
+    "pattern": "Formulaic section template — a section following: 'Despite its [strengths], [subject] faces several challenges' then challenge list, then 'Despite these challenges' pivot, then 'Future Outlook' or 'Looking Ahead' heading",
+    "why": "AI generates articles with this exact template. The strength-challenge-despite-future formula is one of the most recognizable AI content structures",
+    "fix": "Break the formula. Lead with the challenges if they're more interesting. Skip the 'despite' pivot. Integrate strengths and weaknesses throughout.",
+    "priority": 4
+  },
+  {
+    "pattern": "Decorative emoji usage — emojis placed before headings, bullet points, or section titles as decoration rather than communication (e.g., '\ud83d\ude80 Getting Started,' '\ud83d\udca1 Key Insights,' '\u2705 Benefits')",
+    "why": "AI uses emojis as visual markers to look 'engaging' — a strong tell especially in social media, documentation, and blog content. Humans use emojis inline for tone, not as section decorators",
+    "fix": "Remove decorative emojis from headings and bullet prefixes. If emojis fit the content type, use them inline within sentences for tone, not as structural decorators.",
+    "priority": 4
+  },
+  {
+    "pattern": "Excessive title case in headings — capitalizing every word ('Understanding The Core Principles Of Modern Architecture') instead of sentence case ('Understanding the core principles of modern architecture')",
+    "why": "AI defaults to title case from formal training data. Most modern web content uses sentence case. Consistent title case across all headings is a subtle but reliable AI tell",
+    "fix": "Convert to sentence case: capitalize only the first word and proper nouns. Exception: if the publication's style guide explicitly requires title case.",
+    "priority": 2
+  },
+  {
+    "pattern": "Curly (smart) quotation marks and apostrophes — using typographic quotes (\u201c \u201d \u2018 \u2019) instead of straight quotes (\" ') in contexts where straight quotes are standard",
+    "why": "AI generates smart quotes from published training data. Most web content, code, and technical writing uses straight quotes. Smart quotes in technical contexts are a subtle AI indicator",
+    "fix": "Replace curly quotes with straight quotes in technical content, code docs, and web copy. Smart quotes are acceptable in polished editorial content (books, magazines).",
+    "priority": 1
+  }
+]

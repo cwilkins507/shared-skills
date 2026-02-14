@@ -1,0 +1,416 @@
+[
+  {
+    "word": "delve",
+    "why": "the most overused AI filler verb — almost never appears in natural human writing",
+    "alternatives": ["dig into", "explore", "look at", "get into"],
+    "priority": 5
+  },
+  {
+    "word": "tapestry",
+    "why": "metaphor humans almost never use outside textile contexts",
+    "alternatives": ["mix", "blend", "web", "combination"],
+    "priority": 4
+  },
+  {
+    "word": "landscape",
+    "why": "vague AI metaphor used as a filler noun for any domain",
+    "alternatives": ["space", "market", "field", "world"],
+    "priority": 3
+  },
+  {
+    "word": "leverage",
+    "why": "corporate AI jargon verb that sounds like a consultant wrote it",
+    "alternatives": ["use", "rely on", "take advantage of", "build on"],
+    "priority": 3
+  },
+  {
+    "word": "utilize",
+    "why": "unnecessarily formal synonym for 'use' — nobody talks like this",
+    "alternatives": ["use", "work with", "apply"],
+    "priority": 4
+  },
+  {
+    "word": "foster",
+    "why": "AI-preferred verb for 'encourage' that sounds institutional",
+    "alternatives": ["build", "grow", "encourage", "support"],
+    "priority": 4
+  },
+  {
+    "word": "facilitate",
+    "why": "bureaucratic filler verb that adds nothing",
+    "alternatives": ["help", "enable", "make possible", "run"],
+    "priority": 3
+  },
+  {
+    "word": "multifaceted",
+    "why": "vague AI complexity adjective — says nothing specific",
+    "alternatives": ["complicated", "layered", "varied", "involved"],
+    "priority": 3
+  },
+  {
+    "word": "comprehensive",
+    "why": "overused AI completeness adjective — everything is 'comprehensive'",
+    "alternatives": ["full", "thorough", "complete", "detailed"],
+    "priority": 3
+  },
+  {
+    "word": "robust",
+    "why": "AI jargon for 'strong' or 'reliable' with no real meaning",
+    "alternatives": ["strong", "solid", "reliable", "sturdy"],
+    "priority": 3
+  },
+  {
+    "word": "streamline",
+    "why": "AI efficiency verb that never says what actually gets simpler",
+    "alternatives": ["simplify", "speed up", "cut steps from", "clean up"],
+    "priority": 3
+  },
+  {
+    "word": "elevate",
+    "why": "AI verb meaning 'make better' with zero substance",
+    "alternatives": ["improve", "raise", "boost", "lift"],
+    "priority": 3
+  },
+  {
+    "word": "realm",
+    "why": "fantasy-register noun AI uses when it means 'area'",
+    "alternatives": ["area", "field", "domain", "part"],
+    "priority": 3
+  },
+  {
+    "word": "paradigm",
+    "why": "academic AI filler noun for 'approach'",
+    "alternatives": ["model", "approach", "framework", "way of thinking"],
+    "priority": 3
+  },
+  {
+    "word": "pivotal",
+    "why": "AI adjective meaning 'important' with unnecessary dramatic flair",
+    "alternatives": ["key", "critical", "turning-point", "decisive"],
+    "priority": 3
+  },
+  {
+    "word": "cornerstone",
+    "why": "AI metaphor for 'foundation' used in every other paragraph",
+    "alternatives": ["foundation", "basis", "core", "bedrock"],
+    "priority": 3
+  },
+  {
+    "word": "underscore",
+    "why": "AI verb meaning 'emphasize' that sounds like a news anchor",
+    "alternatives": ["highlight", "stress", "show", "point to"],
+    "priority": 3
+  },
+  {
+    "word": "myriad",
+    "why": "archaic AI word meaning 'many' that nobody uses in conversation",
+    "alternatives": ["many", "countless", "a ton of", "dozens of"],
+    "priority": 4
+  },
+  {
+    "word": "seamless",
+    "why": "promotional AI adjective — nothing is actually seamless",
+    "alternatives": ["smooth", "easy", "simple", "painless"],
+    "priority": 2
+  },
+  {
+    "word": "cutting-edge",
+    "why": "promotional hype word that says nothing about what's actually new",
+    "alternatives": ["new", "recent", "latest", "modern"],
+    "priority": 2
+  },
+  {
+    "word": "state-of-the-art",
+    "why": "promotional hype phrase — let the specifics speak for themselves",
+    "alternatives": ["best available", "current", "top-tier", "modern"],
+    "priority": 2
+  },
+  {
+    "word": "holistic",
+    "why": "vague AI completeness adjective that sounds like a wellness brochure",
+    "alternatives": ["complete", "full", "whole", "all-in-one"],
+    "priority": 2
+  },
+  {
+    "word": "dynamic",
+    "why": "promotional filler adjective — everything AI writes is 'dynamic'",
+    "alternatives": ["flexible", "changing", "active", "responsive"],
+    "priority": 2
+  },
+  {
+    "word": "vibrant",
+    "why": "promotional tone adjective that adds color without meaning",
+    "alternatives": ["active", "lively", "busy", "growing"],
+    "priority": 2
+  },
+  {
+    "word": "breathtaking",
+    "why": "inflated AI superlative — almost never warranted",
+    "alternatives": ["impressive", "striking", "surprising", "notable"],
+    "priority": 2
+  },
+  {
+    "word": "harness",
+    "why": "AI verb for 'use' with unnecessary dramatic energy",
+    "alternatives": ["use", "tap into", "put to work"],
+    "priority": 4
+  },
+  {
+    "word": "illuminate",
+    "why": "AI verb for 'explain' or 'show' with false profundity",
+    "alternatives": ["show", "explain", "reveal", "clarify"],
+    "priority": 4
+  },
+  {
+    "word": "navigate",
+    "why": "AI metaphor verb for 'deal with' or 'work through'",
+    "alternatives": ["deal with", "handle", "work through", "figure out"],
+    "priority": 3
+  },
+  {
+    "word": "transcend",
+    "why": "AI verb for 'go beyond' with inflated register",
+    "alternatives": ["go beyond", "exceed", "outgrow"],
+    "priority": 4
+  },
+  {
+    "word": "embark",
+    "why": "AI journey verb — nobody embarks on anything in conversation",
+    "alternatives": ["start", "begin", "kick off"],
+    "priority": 4
+  },
+  {
+    "word": "reimagine",
+    "why": "startup-speak verb that AI uses to mean 'change'",
+    "alternatives": ["rethink", "redesign", "redo", "change"],
+    "priority": 3
+  },
+  {
+    "word": "revolutionize",
+    "why": "AI hype verb — almost nothing is actually revolutionary",
+    "alternatives": ["change", "reshape", "overhaul"],
+    "priority": 3
+  },
+  {
+    "word": "showcase",
+    "why": "AI presentation verb that sounds like a trade show",
+    "alternatives": ["show", "display", "demonstrate", "highlight"],
+    "priority": 3
+  },
+  {
+    "word": "unveil",
+    "why": "AI drama verb for 'release' or 'show'",
+    "alternatives": ["release", "show", "launch", "announce"],
+    "priority": 3
+  },
+  {
+    "word": "weave",
+    "why": "AI metaphor verb for 'combine' or 'integrate' — textile register",
+    "alternatives": ["combine", "blend", "mix", "integrate"],
+    "priority": 4
+  },
+  {
+    "word": "curate",
+    "why": "overused AI verb that sounds like a museum brochure",
+    "alternatives": ["pick", "choose", "collect", "put together"],
+    "priority": 4
+  },
+  {
+    "word": "grapple",
+    "why": "AI verb for 'deal with' that adds false struggle",
+    "alternatives": ["deal with", "face", "work through", "handle"],
+    "priority": 3
+  },
+  {
+    "word": "elucidate",
+    "why": "unnecessarily formal AI verb for 'explain'",
+    "alternatives": ["explain", "clarify", "spell out"],
+    "priority": 4
+  },
+  {
+    "word": "exemplify",
+    "why": "formal AI verb for 'show' or 'represent'",
+    "alternatives": ["show", "represent", "demonstrate"],
+    "priority": 4
+  },
+  {
+    "word": "endeavor",
+    "why": "archaic AI verb/noun for 'try' or 'effort'",
+    "alternatives": ["try", "effort", "attempt", "work"],
+    "priority": 4
+  },
+  {
+    "word": "democratize",
+    "why": "startup AI verb that sounds like a pitch deck",
+    "alternatives": ["open up", "make accessible", "spread", "share"],
+    "priority": 3
+  },
+  {
+    "word": "intricate",
+    "why": "AI complexity adjective — usually replaceable with 'detailed' or 'complicated'",
+    "alternatives": ["detailed", "complicated", "complex", "involved"],
+    "priority": 3
+  },
+  {
+    "word": "profound",
+    "why": "AI depth adjective that inflates everything it touches",
+    "alternatives": ["deep", "big", "serious", "real"],
+    "priority": 3
+  },
+  {
+    "word": "compelling",
+    "why": "AI persuasion adjective overused to mean 'interesting'",
+    "alternatives": ["interesting", "strong", "convincing", "worth reading"],
+    "priority": 2
+  },
+  {
+    "word": "transformative",
+    "why": "AI hype adjective for 'big' or 'important'",
+    "alternatives": ["big", "major", "significant", "game-changing"],
+    "priority": 3
+  },
+  {
+    "word": "unprecedented",
+    "why": "AI drama adjective — almost everything has precedent",
+    "alternatives": ["rare", "unusual", "first-of-its-kind", "new"],
+    "priority": 3
+  },
+  {
+    "word": "groundbreaking",
+    "why": "AI hype adjective that says nothing specific about what broke",
+    "alternatives": ["new", "original", "first", "novel"],
+    "priority": 3
+  },
+  {
+    "word": "crucial",
+    "why": "AI importance adjective overused as a generic intensifier",
+    "alternatives": ["key", "important", "critical", "necessary"],
+    "priority": 2
+  },
+  {
+    "word": "resilient",
+    "why": "AI adjective for 'tough' or 'durable' with motivational-poster energy",
+    "alternatives": ["tough", "durable", "sturdy", "lasting"],
+    "priority": 2
+  },
+  {
+    "word": "nuanced",
+    "why": "AI adjective for 'subtle' or 'complex' — used to sound thoughtful without substance",
+    "alternatives": ["subtle", "complex", "mixed", "varied"],
+    "priority": 2
+  },
+  {
+    "word": "notably",
+    "why": "AI hedge adverb that pretends to add emphasis",
+    "alternatives": ["especially", "in particular", ""],
+    "priority": 2
+  },
+  {
+    "word": "crucially",
+    "why": "AI importance adverb — just state the important thing",
+    "alternatives": ["", "the key part:", "what matters:"],
+    "priority": 2
+  },
+  {
+    "word": "essentially",
+    "why": "AI reduction adverb that often adds nothing",
+    "alternatives": ["basically", "really", ""],
+    "priority": 2
+  },
+  {
+    "word": "fundamentally",
+    "why": "AI depth adverb — false profundity marker",
+    "alternatives": ["at bottom", "really", "basically", ""],
+    "priority": 2
+  },
+  {
+    "word": "importantly",
+    "why": "AI meta-commentary adverb — let the reader decide what's important",
+    "alternatives": ["", "key point:"],
+    "priority": 2
+  },
+  {
+    "word": "meticulously",
+    "why": "AI precision adverb that inflates ordinary care",
+    "alternatives": ["carefully", "precisely", "thoroughly"],
+    "priority": 3
+  },
+  {
+    "word": "seamlessly",
+    "why": "AI smoothness adverb — nothing integrates seamlessly",
+    "alternatives": ["smoothly", "easily", "without hassle"],
+    "priority": 3
+  },
+  {
+    "word": "profoundly",
+    "why": "AI depth adverb that inflates significance",
+    "alternatives": ["deeply", "seriously", "really"],
+    "priority": 3
+  },
+  {
+    "word": "tirelessly",
+    "why": "AI work-ethic adverb that sounds like a eulogy",
+    "alternatives": ["constantly", "nonstop", "relentlessly"],
+    "priority": 3
+  },
+  {
+    "word": "intricately",
+    "why": "AI complexity adverb — usually means 'in detail'",
+    "alternatives": ["in detail", "closely", "carefully"],
+    "priority": 3
+  },
+  {
+    "word": "synergy",
+    "why": "corporate AI noun for 'working together' — the most cliched business buzzword",
+    "alternatives": ["working together", "collaboration", "combined effect"],
+    "priority": 3
+  },
+  {
+    "word": "facet",
+    "why": "AI noun for 'part' or 'aspect' with false sophistication",
+    "alternatives": ["part", "aspect", "side", "angle"],
+    "priority": 3
+  },
+  {
+    "word": "testament",
+    "why": "AI noun for 'proof' or 'evidence' with inflated gravity",
+    "alternatives": ["proof", "evidence", "sign", "example"],
+    "priority": 3
+  },
+  {
+    "word": "journey",
+    "why": "AI metaphor noun for 'process' or 'experience' — overused motivational register",
+    "alternatives": ["process", "experience", "path", "work"],
+    "priority": 3
+  },
+  {
+    "word": "quest",
+    "why": "AI noun for 'search' or 'effort' with fantasy-game register",
+    "alternatives": ["search", "effort", "push", "goal"],
+    "priority": 2
+  },
+  {
+    "word": "stunning",
+    "why": "promotional AI superlative — lets the reader decide what's stunning",
+    "alternatives": ["striking", "sharp", "impressive", "notable"],
+    "priority": 2
+  },
+  {
+    "word": "nestled",
+    "why": "AI place-description verb — almost exclusively appears in AI-generated travel or location content",
+    "alternatives": ["sits", "is located", "tucked away in", "sits between"],
+    "priority": 3
+  },
+  {
+    "word": "renowned",
+    "why": "promotional AI adjective — sounds like a tourism brochure",
+    "alternatives": ["well-known", "famous", "respected", "established"],
+    "priority": 2
+  },
+  {
+    "word": "boasts",
+    "why": "copula avoidance verb — AI says 'boasts 10 features' instead of 'has 10 features' to avoid simple is/has constructions",
+    "alternatives": ["has", "includes", "comes with", "offers"],
+    "priority": 3
+  }
+]

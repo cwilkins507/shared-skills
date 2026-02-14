@@ -1,0 +1,236 @@
+[
+  {
+    "content_type": "blog",
+    "before": "Delving into the intricacies of machine learning reveals a multifaceted landscape.",
+    "after": "Machine learning is more complicated than most people think.",
+    "rules_applied": ["banned_word:delve", "banned_word:multifaceted", "banned_word:landscape"]
+  },
+  {
+    "content_type": "blog",
+    "before": "In today's rapidly evolving technological landscape, it's worth noting that AI is a game-changer for modern businesses.",
+    "after": "AI is changing how most businesses operate. That shift is already underway.",
+    "rules_applied": ["banned_phrase:in_todays_landscape", "banned_phrase:its_worth_noting", "banned_phrase:game_changer"]
+  },
+  {
+    "content_type": "blog",
+    "before": "- **Efficiency**: Streamlines your workflow and saves time.\n- **Scalability**: Handles growing demands with ease.\n- **Reliability**: Ensures consistent performance across use cases.",
+    "after": "It cuts busywork out of your day. It grows with you — we've had users go from 10 to 10,000 requests without changing a thing. And it doesn't break on Tuesdays.",
+    "rules_applied": ["banned_structure:bold_colon_list"]
+  },
+  {
+    "content_type": "technical",
+    "before": "This robust framework facilitates streamlined development workflows across the entire pipeline.",
+    "after": "The framework keeps the build pipeline simple.",
+    "rules_applied": ["banned_word:robust", "banned_word:facilitate", "banned_word:streamline"]
+  },
+  {
+    "content_type": "technical",
+    "before": "By leveraging the comprehensive API, developers can navigate the complexities of data management with ease.",
+    "after": "The API handles most of the data management for you.",
+    "rules_applied": ["banned_structure:gerund_opener", "banned_word:leverage", "banned_word:comprehensive", "banned_phrase:navigate_complexities"]
+  },
+  {
+    "content_type": "technical",
+    "before": "It's important to remember that error handling serves as a cornerstone of reliable systems. At its core, it prevents cascading failures.",
+    "after": "Error handling keeps systems from falling apart. Without it, one bad request takes down everything downstream.",
+    "rules_applied": ["banned_phrase:important_to_remember", "banned_phrase:serves_as_testament", "banned_word:cornerstone", "banned_phrase:at_its_core"]
+  },
+  {
+    "content_type": "social",
+    "before": "Let's dive in to why this tool is a pivotal addition to your workflow!",
+    "after": "This tool is going to save you hours. Here's how.",
+    "rules_applied": ["banned_phrase:lets_dive_in", "banned_word:pivotal"]
+  },
+  {
+    "content_type": "social",
+    "before": "Without further ado, here's why this matters: fostering genuine connections elevates your brand in meaningful ways.",
+    "after": "Real connections make your brand stronger. Period.",
+    "rules_applied": ["banned_phrase:without_further_ado", "banned_structure:heres_why_matters", "banned_word:foster", "banned_word:elevate"]
+  },
+  {
+    "content_type": "social",
+    "before": "The key takeaway is that utilizing social media is a cornerstone of modern marketing strategies.",
+    "after": "If you're not using social media for marketing, you're behind.",
+    "rules_applied": ["banned_phrase:key_takeaway", "banned_word:utilize", "banned_word:cornerstone"]
+  },
+  {
+    "content_type": "email",
+    "before": "I wanted to underscore the multifaceted nature of our comprehensive approach to this initiative.",
+    "after": "I wanted to flag a few things about our approach.",
+    "rules_applied": ["banned_word:underscore", "banned_word:multifaceted", "banned_word:comprehensive"]
+  },
+  {
+    "content_type": "email",
+    "before": "At its core, our strategy strikes a balance between innovation and reliability moving forward.",
+    "after": "Our strategy aims for both: new ideas and stable systems.",
+    "rules_applied": ["banned_phrase:at_its_core", "banned_phrase:strikes_balance", "banned_phrase:moving_forward"]
+  },
+  {
+    "content_type": "email",
+    "before": "In an increasingly competitive world, let's unpack the myriad opportunities available in this realm.",
+    "after": "There are a lot of opportunities here. Let me walk through the ones that matter most.",
+    "rules_applied": ["banned_phrase:increasingly_world", "banned_phrase:lets_unpack", "banned_word:myriad", "banned_word:realm"]
+  },
+  {
+    "content_type": "blog",
+    "before": "This approach, emphasizing the significance of clean architecture, demonstrates the value of investing in code quality early.",
+    "after": "Clean architecture pays off. The earlier you invest in it, the less painful everything else becomes.",
+    "rules_applied": ["banned_phrase:emphasizing_significance", "banned_phrase:demonstrating_value"]
+  },
+  {
+    "content_type": "blog",
+    "before": "It's not about working harder, it's about working smarter. This isn't about hustle — it's about systems.",
+    "after": "Systems beat effort. Build the right process and the results follow.",
+    "rules_applied": ["banned_structure:contrast_reframe"]
+  },
+  {
+    "content_type": "technical",
+    "before": "Moreover, the API provides seamless integration. Furthermore, it offers a holistic view of your data. Additionally, the dynamic caching layer ensures state-of-the-art performance.",
+    "after": "The API plugs in without config headaches. You get a full view of your data from one endpoint. And the caching layer is fast — sub-50ms on most queries.",
+    "rules_applied": ["banned_structure:excessive_transitions", "banned_word:seamless", "banned_word:holistic", "banned_word:dynamic", "banned_word:state-of-the-art"]
+  },
+  {
+    "content_type": "social",
+    "before": "We're entering an era where AI will replace most manual workflows. Average developers ignore this. Senior developers are already adapting.",
+    "after": "AI is replacing a lot of manual workflows right now. If you haven't started adapting, here's where to begin.",
+    "rules_applied": ["banned_structure:era_framing", "banned_structure:identity_shaming"]
+  },
+  {
+    "content_type": "blog",
+    "before": "There are several key factors to consider when choosing a database. Performance is important for handling large workloads. Scalability ensures your system grows with demand. Cost plays a significant role in long-term planning. Reliability keeps your application running smoothly.",
+    "after": "Picking a database comes down to 4 things:\n\n- **Performance** — can it handle your query volume without choking?\n- **Scalability** — what happens when traffic 10x's?\n- **Cost** — not just the license, but ops cost over 3 years\n- **Reliability** — what's the actual uptime SLA?\n\nGet any one of these wrong and you'll feel it within 6 months.",
+    "rules_applied": ["banned_structure:all_prose_when_list_clearer", "banned_structure:vague_quantities", "banned_structure:sentence_cadence_uniformity"]
+  },
+  {
+    "content_type": "technical",
+    "before": "The system processes requests efficiently. It handles authentication through a secure token system. The API validates inputs before processing them. Responses are returned in a standardized format. Error handling covers various edge cases.",
+    "after": "The system processes requests in under 50ms at p99. Authentication runs through JWT tokens with 24-hour expiry. Every input gets validated against a JSON schema before it touches the database.\n\nResponses come back as JSON with consistent status codes — 200 for success, 4xx for client errors, 5xx for server faults. Edge cases like timeouts, malformed payloads, and rate limits all return structured error objects with retry hints.",
+    "rules_applied": ["banned_structure:sentence_cadence_uniformity", "banned_structure:vague_quantities", "banned_structure:uniform_paragraph_length"]
+  },
+  {
+    "content_type": "blog",
+    "before": "React offers fast rendering through its virtual DOM. Vue provides an approachable learning curve for beginners. Svelte compiles away the framework for smaller bundle sizes. Each framework has its own strengths and trade-offs that developers should carefully evaluate based on their project requirements.",
+    "after": "Here's how the three stack up:\n\n| | React | Vue | Svelte |\n|---|---|---|---|\n| **Rendering** | Virtual DOM diffing | Virtual DOM diffing | Compile-time, no runtime |\n| **Bundle size** | ~42kb | ~33kb | ~1.6kb |\n| **Learning curve** | Steep (JSX, hooks) | Gentle (template syntax) | Gentle (closest to vanilla) |\n| **Ecosystem** | Massive | Large | Growing |\n\nReact if you need ecosystem depth. Vue if your team is ramping up fast. Svelte if bundle size is the constraint.",
+    "rules_applied": ["banned_structure:comparison_as_prose", "banned_structure:sentence_cadence_uniformity"]
+  },
+  {
+    "content_type": "email",
+    "before": "I wanted to provide an update on the project. The development team has made substantial progress on the core features. Testing has revealed some issues that need attention. The timeline may need adjustment based on these findings. We should discuss the path forward in our next meeting.",
+    "after": "Quick project update.\n\nThe team shipped 3 of the 5 core features this sprint. Two are in code review now. Testing turned up an auth bug that blocks the release — details in JIRA-4521.\n\nWe're about a week behind the original timeline. I'd like 15 minutes in Thursday's standup to talk through options: push the release date, or ship without the admin panel and patch it later.\n\nLet me know if Thursday works.",
+    "rules_applied": ["banned_structure:sentence_cadence_uniformity", "banned_structure:vague_quantities", "banned_structure:uniform_paragraph_length"]
+  },
+  {
+    "content_type": "social",
+    "before": "Implementing automated testing in your workflow can significantly improve code quality. It helps catch bugs early and reduces the time spent on manual testing. Many teams have found that automated tests also improve developer confidence when making changes.",
+    "after": "Automated tests changed how our team ships.\n\nBugs caught before merge: up 70%. Time spent on manual QA: down from 2 days to 4 hours. And developers actually refactor now — because the tests catch regressions before anyone else does.\n\nStart with integration tests. Unit tests can wait.",
+    "rules_applied": ["banned_structure:sentence_cadence_uniformity", "banned_structure:vague_quantities", "banned_word:significantly"]
+  },
+  {
+    "content_type": "technical",
+    "before": "The caching layer provides improved performance. It stores frequently accessed data in memory. This reduces the need for repeated database queries. The cache invalidation strategy ensures data consistency. Various configuration options allow customization of cache behavior.",
+    "after": "The caching layer sits between the API and Postgres. Frequently hit queries get their results stored in Redis with a 5-minute TTL.\n\nResult: p95 latency dropped from 340ms to 12ms for cached routes. Cache hit rate runs about 87% in production.\n\nInvalidation is key-based — when a row updates, its cache key gets evicted immediately. You can tune TTL, max memory, and eviction policy in `config/cache.yaml`.",
+    "rules_applied": ["banned_structure:sentence_cadence_uniformity", "banned_structure:vague_quantities", "banned_structure:no_formatting_diversity", "banned_word:various"]
+  },
+  {
+    "content_type": "blog",
+    "before": "The team redesigned the onboarding flow, creating a more intuitive experience and fostering deeper user engagement from day one.",
+    "after": "The team redesigned the onboarding flow. New users now complete setup in 3 minutes instead of 12.",
+    "rules_applied": ["banned_structure:terminal_participial", "banned_word:foster"]
+  },
+  {
+    "content_type": "technical",
+    "before": "This approach could potentially reduce latency. It might arguably improve throughput in some scenarios, and it could possibly lead to better resource utilization.",
+    "after": "This approach cuts latency. It also improves throughput under high concurrency.",
+    "rules_applied": ["banned_structure:excessive_hedging_density"]
+  },
+  {
+    "content_type": "blog",
+    "before": "The new API — which launched last Tuesday — handles authentication — including OAuth and API keys — faster than the old system — and it's cheaper to run.",
+    "after": "The new API launched last Tuesday. It handles authentication (OAuth and API keys) faster than the old system, and it's cheaper to run.",
+    "rules_applied": ["banned_structure:em_dash_overuse"]
+  },
+  {
+    "content_type": "blog",
+    "before": "On one hand, TypeScript adds type safety. On the other hand, it adds complexity. Both approaches have their merits, and the choice ultimately depends on your specific needs.",
+    "after": "Use TypeScript. The type safety catches bugs that would otherwise hit production. Yes, there's a learning curve, but it pays for itself within a month on any team larger than two.",
+    "rules_applied": ["banned_structure:false_balance", "banned_phrase:on_one_hand"]
+  },
+  {
+    "content_type": "technical",
+    "before": "The implementation of the caching layer enabled the achievement of significant performance improvements through the reduction of database query frequency.",
+    "after": "We added a caching layer. Database queries dropped 80% and response times fell from 340ms to 40ms.",
+    "rules_applied": ["banned_structure:nominalization", "banned_structure:vague_quantities"]
+  },
+  {
+    "content_type": "email",
+    "before": "I do not think we should proceed until we have reviewed the data. It is important that we do not rush this decision. We will need to ensure that the team is aligned.",
+    "after": "I don't think we should move forward until we've reviewed the data. Let's not rush this. We need the team aligned first.",
+    "rules_applied": ["banned_structure:missing_contractions"]
+  },
+  {
+    "content_type": "blog",
+    "before": "Building on this foundation, we then turned to performance testing. Following from our performance results, we focused on optimization. With these optimizations in mind, we deployed to staging. As a result of the staging deployment, we identified three issues.",
+    "after": "Next up: performance testing. The results pointed to two bottlenecks in the query layer, so we optimized those before deploying to staging. Staging caught three issues we hadn't seen locally.",
+    "rules_applied": ["banned_structure:over_cohesion"]
+  },
+  {
+    "content_type": "blog",
+    "before": "In conclusion, we've explored how caching improves performance, how to choose the right strategy, and why invalidation matters. These three pillars form the foundation of effective caching.",
+    "after": "Start with read-through caching on your highest-traffic endpoint. Measure the hit rate after a week. If it's below 70%, your TTL is probably too short.",
+    "rules_applied": ["banned_structure:circular_conclusion", "banned_structure:conclusion_opener"]
+  },
+  {
+    "content_type": "email",
+    "before": "Great question! Absolutely, I'd be happy to help with that. Certainly, the approach you're describing is something we can support.",
+    "after": "Yeah, we can support that approach. Here's what it would look like.",
+    "rules_applied": ["banned_structure:affirmation_opener"]
+  },
+  {
+    "content_type": "technical",
+    "before": "This framework offers a powerful solution for building modern applications. Its elegant architecture enables teams to build faster and more efficiently, creating transformative results.",
+    "after": "This framework works well for CRUD apps and API servers. It struggles with real-time features and the plugin ecosystem is thin. For most web projects, though, it cuts boilerplate by about 40%.",
+    "rules_applied": ["banned_structure:excessive_positivity", "banned_word:transformative"]
+  },
+  {
+    "content_type": "blog",
+    "before": "The museum serves as a testament to human creativity and boasts an impressive collection that features over 2,000 works spanning from ancient civilizations to contemporary art.",
+    "after": "The museum has over 2,000 works, from ancient pottery to pieces finished last year.",
+    "rules_applied": ["banned_structure:copula_avoidance", "banned_word:boasts", "banned_phrase:serves_as_testament", "banned_phrase:features_a", "banned_structure:false_range"]
+  },
+  {
+    "content_type": "blog",
+    "before": "The framework has gained traction among developers. The open-source tool appeals to both startups and enterprises. This popular library makes development faster. The widely-adopted solution reduces boilerplate code.",
+    "after": "The framework has gained traction. It appeals to startups and bigger companies alike. It cuts boilerplate, which is the main reason developers adopt it.",
+    "rules_applied": ["banned_structure:synonym_cycling"]
+  },
+  {
+    "content_type": "email",
+    "before": "Great question! You're absolutely right that this is an important consideration. I hope this helps clarify the approach. Let me know if you have any questions.",
+    "after": "Yeah, that's a real consideration. Here's how we'd handle it. Ping me if anything's unclear.",
+    "rules_applied": ["banned_phrase:great_question", "banned_phrase:youre_absolutely_right", "banned_phrase:i_hope_this_helps", "banned_phrase:let_me_know_if"]
+  },
+  {
+    "content_type": "blog",
+    "before": "Despite its robust ecosystem, React faces several challenges in the modern development landscape. Despite these challenges, the framework continues to evolve. Looking Ahead, React's future appears promising.",
+    "after": "React's ecosystem is massive, but that size creates real problems: upgrade fatigue, choice paralysis, and a tutorial landscape that's 40% outdated at any given time. The core team is addressing some of this with Server Components, but adoption is slow.",
+    "rules_applied": ["banned_structure:formulaic_section_template", "banned_word:robust", "banned_word:landscape", "banned_phrase:despite_these_challenges"]
+  },
+  {
+    "content_type": "social",
+    "before": "\ud83d\ude80 Getting Started\n\ud83d\udca1 Key Insights\n\u2705 Benefits of the New Approach\n\u26a1 Performance Improvements",
+    "after": "Getting started\nKey insights\nBenefits of the new approach\nPerformance improvements",
+    "rules_applied": ["banned_structure:decorative_emoji", "banned_structure:title_case_headings"]
+  },
+  {
+    "content_type": "technical",
+    "before": "The platform stands as a pioneering solution in the cloud computing space, as of 2024. Based on available information, it represents a significant advancement in serverless architecture.",
+    "after": "The platform is one of the earlier serverless options. Its architecture influenced what AWS and Google built later.",
+    "rules_applied": ["banned_phrase:stands_as_a", "banned_phrase:as_of_date", "banned_phrase:based_on_available_info", "banned_phrase:represents_a", "banned_structure:copula_avoidance"]
+  },
+  {
+    "content_type": "blog",
+    "before": "This renowned destination, nestled in the heart of the mountains, offers a stunning array of experiences from adventurous hiking to peaceful meditation.",
+    "after": "The town sits at 8,000 feet in the Rockies. You can hike all morning and do nothing all afternoon.",
+    "rules_applied": ["banned_word:renowned", "banned_word:nestled", "banned_word:stunning", "banned_structure:false_range"]
+  }
+]

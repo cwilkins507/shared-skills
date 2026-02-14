@@ -1,0 +1,374 @@
+[
+  {
+    "phrase": "It's worth noting that",
+    "why": "hedging filler that adds nothing — just say the thing",
+    "alternatives": ["", "One thing —", "Also:"],
+    "priority": 3
+  },
+  {
+    "phrase": "In today's [noun] landscape",
+    "why": "generic AI opener that sets a fake scene",
+    "alternatives": ["Right now", "These days", "Lately"],
+    "priority": 4
+  },
+  {
+    "phrase": "In an increasingly [adjective] world",
+    "why": "dramatic AI scene-setting that sounds like a TED talk intro",
+    "alternatives": ["", "As [specific thing] grows"],
+    "priority": 4
+  },
+  {
+    "phrase": "At the end of the day",
+    "why": "cliche conclusion phrase that kills any real insight",
+    "alternatives": ["Ultimately", "What matters is", "Bottom line"],
+    "priority": 3
+  },
+  {
+    "phrase": "When it comes to",
+    "why": "filler transition that delays getting to the point",
+    "alternatives": ["For", "With", ""],
+    "priority": 3
+  },
+  {
+    "phrase": "It's important to remember that",
+    "why": "patronizing AI hedging — the reader decides what's important",
+    "alternatives": ["", "Keep in mind:"],
+    "priority": 3
+  },
+  {
+    "phrase": "Let's dive in",
+    "why": "YouTube-brain AI opener that adds zero value",
+    "alternatives": [""],
+    "priority": 5
+  },
+  {
+    "phrase": "Without further ado",
+    "why": "forced-casual AI transition — just start",
+    "alternatives": [""],
+    "priority": 5
+  },
+  {
+    "phrase": "This is where [X] comes in",
+    "why": "AI product-pitch transition",
+    "alternatives": ["[X] handles this", "[X] solves this"],
+    "priority": 4
+  },
+  {
+    "phrase": "Here's the thing",
+    "why": "fake-casual AI authority move — just state the thing",
+    "alternatives": [""],
+    "priority": 3
+  },
+  {
+    "phrase": "The beauty of [X] is",
+    "why": "AI enthusiasm filler that sounds like a sales pitch",
+    "alternatives": ["What works about [X] is", "[X] is useful because"],
+    "priority": 4
+  },
+  {
+    "phrase": "At its core",
+    "why": "AI depth-faking phrase that pretends to go deeper but doesn't",
+    "alternatives": ["Really", "Basically", "Stripped down"],
+    "priority": 3
+  },
+  {
+    "phrase": "Navigate the complexities of",
+    "why": "pompous AI phrase for 'deal with'",
+    "alternatives": ["Deal with", "Handle", "Work through"],
+    "priority": 4
+  },
+  {
+    "phrase": "Strikes a balance between",
+    "why": "AI hedge-both-sides phrase — pick a side or be specific",
+    "alternatives": ["Balances", "Sits between", "Manages both"],
+    "priority": 3
+  },
+  {
+    "phrase": "Serves as a testament to",
+    "why": "AI dramatic attribution that over-inflates everything",
+    "alternatives": ["Shows", "Proves", "Demonstrates"],
+    "priority": 4
+  },
+  {
+    "phrase": "A game-changer",
+    "why": "AI hype noun that means nothing specific",
+    "alternatives": ["A big deal", "A shift", "Significant"],
+    "priority": 3
+  },
+  {
+    "phrase": "The key takeaway is",
+    "why": "AI summary crutch — let the reader draw their own conclusion",
+    "alternatives": ["What matters here:", "The point:", "So:"],
+    "priority": 3
+  },
+  {
+    "phrase": "Let's unpack this",
+    "why": "false-casual AI analysis opener",
+    "alternatives": [""],
+    "priority": 5
+  },
+  {
+    "phrase": "indelible mark",
+    "why": "inflated AI importance — almost nothing leaves an 'indelible mark'",
+    "alternatives": ["lasting impact", "real effect", "mark"],
+    "priority": 4
+  },
+  {
+    "phrase": "significant shift",
+    "why": "vague AI drama — be specific about what shifted and how",
+    "alternatives": ["change", "shift", "move"],
+    "priority": 3
+  },
+  {
+    "phrase": "setting the stage for",
+    "why": "theatrical AI setup phrase",
+    "alternatives": ["leading to", "before", "opening up"],
+    "priority": 3
+  },
+  {
+    "phrase": "deeply rooted in",
+    "why": "fake depth signaling — sounds profound, says nothing",
+    "alternatives": ["based on", "built on", "comes from"],
+    "priority": 3
+  },
+  {
+    "phrase": "at a fundamental level",
+    "why": "AI depth-faking — just say the thing directly",
+    "alternatives": ["really", "basically", ""],
+    "priority": 3
+  },
+  {
+    "phrase": "emphasizing the significance of",
+    "why": "empty meta-analysis — describe the significance, don't announce it",
+    "alternatives": [""],
+    "priority": 4
+  },
+  {
+    "phrase": "highlighting the importance of",
+    "why": "empty meta-analysis — show why it matters instead",
+    "alternatives": [""],
+    "priority": 4
+  },
+  {
+    "phrase": "underscoring the need for",
+    "why": "empty meta-analysis — state the need directly",
+    "alternatives": [""],
+    "priority": 4
+  },
+  {
+    "phrase": "demonstrating the value of",
+    "why": "empty meta-analysis — show the value, don't narrate that you're showing it",
+    "alternatives": [""],
+    "priority": 4
+  },
+  {
+    "phrase": "unlock the potential",
+    "why": "AI hype phrase that sounds like a startup pitch deck",
+    "alternatives": ["get more from", "use", "tap into"],
+    "priority": 4
+  },
+  {
+    "phrase": "best practices",
+    "why": "corporate AI filler — say what the practices actually are",
+    "alternatives": ["what works", "good habits", "proven approaches"],
+    "priority": 3
+  },
+  {
+    "phrase": "dive deep",
+    "why": "AI depth metaphor — just go into detail without announcing it",
+    "alternatives": ["look closely at", "get into", ""],
+    "priority": 3
+  },
+  {
+    "phrase": "It's not [X], it's [Y]",
+    "why": "contrast/antithesis framing — an AI rhetorical trick that feels manufactured",
+    "alternatives": ["state Y directly without the setup"],
+    "priority": 2
+  },
+  {
+    "phrase": "We're entering an era where",
+    "why": "urgency/era framing — sounds dated immediately and won't age well",
+    "alternatives": ["Right now", "These days", ""],
+    "priority": 4
+  },
+  {
+    "phrase": "As I mentioned earlier",
+    "why": "meta-commentary — the reader doesn't need narration about the writing process",
+    "alternatives": [""],
+    "priority": 2
+  },
+  {
+    "phrase": "It could be argued that",
+    "why": "academic hedging that avoids committing to a position",
+    "alternatives": ["", "I think", "The evidence suggests"],
+    "priority": 2
+  },
+  {
+    "phrase": "One could argue",
+    "why": "academic hedging — just make the argument directly",
+    "alternatives": ["", "I'd say", "It looks like"],
+    "priority": 2
+  },
+  {
+    "phrase": "It's no secret that",
+    "why": "fake insider knowledge — pretends to share something obvious as if it's a reveal",
+    "alternatives": ["", "Everyone knows"],
+    "priority": 2
+  },
+  {
+    "phrase": "No discussion would be complete without",
+    "why": "meta-editorializing — the reader didn't ask for completeness certification",
+    "alternatives": ["Also worth mentioning:", ""],
+    "priority": 4
+  },
+  {
+    "phrase": "Rich cultural heritage",
+    "why": "travel-brochure language that AI defaults to when describing any culture or place",
+    "alternatives": ["history", "traditions", "culture"],
+    "priority": 4
+  },
+  {
+    "phrase": "Plays a vital role",
+    "why": "inflated importance — everything AI writes 'plays a vital role'",
+    "alternatives": ["matters for", "helps with", "is important to"],
+    "priority": 3
+  },
+  {
+    "phrase": "Plays a crucial role",
+    "why": "inflated importance — variant of 'plays a vital role'",
+    "alternatives": ["matters for", "helps with", "is key to"],
+    "priority": 3
+  },
+  {
+    "phrase": "From a broader perspective",
+    "why": "hedge stacking that delays getting to the point",
+    "alternatives": ["Zooming out:", "Big picture:", ""],
+    "priority": 3
+  },
+  {
+    "phrase": "As we continue to",
+    "why": "vague future framing that sounds like a corporate annual report",
+    "alternatives": ["Going forward", "Next", ""],
+    "priority": 3
+  },
+  {
+    "phrase": "In a world where",
+    "why": "formulaic movie-trailer template opener",
+    "alternatives": ["", "Right now", "Since"],
+    "priority": 4
+  },
+  {
+    "phrase": "In essence",
+    "why": "depth-faking phrase similar to 'at its core' — just say the thing",
+    "alternatives": ["Really", "Basically", ""],
+    "priority": 2
+  },
+  {
+    "phrase": "On one hand",
+    "why": "false balance setup that commits to both-sidesing everything",
+    "alternatives": ["", "One view:", "Some say"],
+    "priority": 2
+  },
+  {
+    "phrase": "Scholars agree",
+    "why": "vague attribution without naming any actual scholars",
+    "alternatives": ["Research shows", "[Name] found that", ""],
+    "priority": 2
+  },
+  {
+    "phrase": "Experts suggest",
+    "why": "vague attribution — name the experts or drop the appeal to authority",
+    "alternatives": ["[Name] suggests", "Research from [source] shows", ""],
+    "priority": 2
+  },
+  {
+    "phrase": "Enduring legacy",
+    "why": "inflated importance — almost nothing has an 'enduring legacy' in a blog post",
+    "alternatives": ["lasting effect", "impact", "influence"],
+    "priority": 3
+  },
+  {
+    "phrase": "Moving forward",
+    "why": "corporate AI transition phrase that adds no information",
+    "alternatives": ["Next", "From here", ""],
+    "priority": 2
+  },
+  {
+    "phrase": "I hope this helps",
+    "why": "chatbot communication artifact — no human writer ends a piece with this",
+    "alternatives": [""],
+    "priority": 4
+  },
+  {
+    "phrase": "Let me know if you have any questions",
+    "why": "chatbot sign-off formula — sounds like automated customer service",
+    "alternatives": ["", "Questions? Just ask."],
+    "priority": 4
+  },
+  {
+    "phrase": "Would you like me to",
+    "why": "chatbot offer pattern — AI asking to do more, not relevant in written content",
+    "alternatives": [""],
+    "priority": 4
+  },
+  {
+    "phrase": "You're absolutely right",
+    "why": "sycophantic agreement — AI over-validates before adding its own point",
+    "alternatives": ["Yeah", "Right", "True —"],
+    "priority": 4
+  },
+  {
+    "phrase": "That's an excellent point",
+    "why": "sycophantic praise — AI flatters before responding instead of just responding",
+    "alternatives": ["", "Good point —"],
+    "priority": 4
+  },
+  {
+    "phrase": "That's a great question",
+    "why": "sycophantic stalling — AI praises the question to delay answering",
+    "alternatives": [""],
+    "priority": 5
+  },
+  {
+    "phrase": "As of [date]",
+    "why": "knowledge-cutoff disclaimer — reveals AI uncertainty about temporal info. Remove unless genuinely citing a dated source",
+    "alternatives": [""],
+    "priority": 3
+  },
+  {
+    "phrase": "Based on available information",
+    "why": "knowledge-cutoff hedge — AI covering for training data limitations",
+    "alternatives": ["", "From what I've seen"],
+    "priority": 3
+  },
+  {
+    "phrase": "Despite these challenges",
+    "why": "formulaic section template transition — AI uses this to pivot from problems to optimism",
+    "alternatives": ["Still", "Even so", "That said"],
+    "priority": 3
+  },
+  {
+    "phrase": "Stands as a",
+    "why": "copula avoidance — AI says 'stands as a landmark' instead of 'is a landmark'",
+    "alternatives": ["is", "remains"],
+    "priority": 3
+  },
+  {
+    "phrase": "Represents a",
+    "why": "copula avoidance — AI says 'represents a shift' instead of 'is a shift'",
+    "alternatives": ["is", "marks"],
+    "priority": 2
+  },
+  {
+    "phrase": "Features a",
+    "why": "copula avoidance — AI says 'features a modern design' instead of 'has a modern design'",
+    "alternatives": ["has", "includes", "comes with"],
+    "priority": 2
+  },
+  {
+    "phrase": "Despite its [noun], [subject] faces several challenges",
+    "why": "formulaic section template — the exact 'strength then pivot to weakness' formula",
+    "alternatives": ["State the challenge directly without the despite-clause setup"],
+    "priority": 3
+  }
+]

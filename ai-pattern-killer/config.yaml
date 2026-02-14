@@ -1,0 +1,22 @@
+sensitivity: medium          # low | medium | high | paranoid
+min_score_threshold: 6       # sentences below this get rewritten
+max_rewrite_passes: 3        # prevent infinite loops
+burstiness_target: 8         # target standard deviation of sentence word counts
+max_hedge_density: 1         # max hedging words allowed per paragraph
+voice_profile: null          # user can add their own voice description later
+content_types:               # different rules per content type
+  - blog
+  - technical
+  - social
+  - email
+active_content_type: blog    # default
+log_feedback: true           # auto-log every correction
+auto_consolidate: true       # run learning engine automatically
+consolidation_trigger: 10    # number of feedback entries before consolidation
+enable_change_summary: true  # show summary of what was changed in output
+change_summary_threshold: 10 # minimum flags before summary is included
+priority_threshold:          # minimum priority to flag at each sensitivity level
+  low: 4
+  medium: 2
+  high: 1
+  paranoid: 0
