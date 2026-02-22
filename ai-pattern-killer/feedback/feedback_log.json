@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "date": "2026-02-14",
+    "flagged_text": "Not theory, not motivational content. Just what I observed building software, leading teams, and running side projects in a year that changed the rules.",
+    "user_issue": "Sounds performative — the 'not X, not Y, just Z' structure tries too hard to establish credibility",
+    "category": "structure",
+    "pattern": "credibility_posturing — negation list followed by 'just' to position the writer as authentic",
+    "fix_applied": "Replaced with direct statement about what happened, added honest admission ('Some landed. Some didn't.')",
+    "suggested_rule": "Flag 'Not X, not Y. Just [what I actually did]' patterns — they announce authenticity instead of demonstrating it"
+  }
+]

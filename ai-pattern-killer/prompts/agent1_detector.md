@@ -41,30 +41,81 @@ In the detection summary, group flags by priority tier and list the highest-prio
 3. Before flagging, check `exceptions.json`. If the match appears in the allowed lists, skip it.
 4. For structural patterns, look at paragraph-level and section-level structure, not just individual lines.
 
+## Flag tiers: REQUIRED vs. REVIEW
+
+Every flag gets a tier label that controls how the rewriter handles it.
+
+**REQUIRED** — Pattern is almost never intentional. The rewriter applies the fix automatically.
+
+**REVIEW** — Pattern could be deliberate rhetoric. The rewriter presents a suggested change with a one-line rationale. The user accepts or rejects.
+
+### Tier classification
+
+**Always REQUIRED:**
+- All banned words (from `banned_words.json`)
+- All banned phrases (from `banned_phrases.json`)
+- Bold-colon lists
+- Opening paragraph restating the question
+- Gerund phrase openers ("By leveraging...")
+- Section-ending summaries
+- Conclusion openers ("In conclusion", "To sum up", "In summary")
+- Chatbot artifacts and sycophantic phrases
+- Knowledge-cutoff disclaimers
+- Single-word affirmation openers ("Certainly!", "Absolutely!")
+- Decorative emoji
+- Curly quotation marks
+- Title case headings
+- Formulaic section templates ("Despite its... faces challenges")
+- Excessive formal transitions (Moreover, Furthermore, Additionally)
+- Copula avoidance (serves as, stands as, boasts, features)
+- Nominalization (noun forms replacing verbs)
+- Mechanical boldface emphasis
+- Present participle (-ing) density (3+ per paragraph)
+- All rhythm scan failures (sentence cadence uniformity, paragraph uniformity, missing formatting diversity, vague quantities, missing contractions, excessive hedging density, terminal participial phrase density)
+
+**Always REVIEW:**
+- Three-part parallel structures (X does A. Y does B. Z does C.)
+- Negation-reframe / "It's not X, it's Y"
+- Short declarative contrast pairs ("X isn't the metric. Y is.")
+- Negation-then-amplify ("X doesn't change this. It amplifies it.")
+- Reframe pivots ("The interesting question isn't X — it's Y")
+- Escalation/universalization ("That's not just X. That's every Y.")
+- Crowd contrast juxtaposition ("Everyone's doing X. Nobody's doing Y.")
+- Dramatic buildup stacking (short declaratives before a "But" pivot)
+- Rule of three in lists (when items could genuinely be three)
+- Clean binary dismissals without nuance
+- Elaboration after anecdote (when the story already made the point)
+- Em dash usage (when not exceeding density limits — excessive density is REQUIRED)
+- False balance (at high/paranoid sensitivity)
+- Synonym cycling (at high/paranoid sensitivity)
+- Engagement bait framing
+- Manipulative command framing
+
+**Edge case rule:** If a structural pattern flagged as REVIEW appears 3+ times in the same piece, escalate the third and subsequent instances to REQUIRED. One negation-reframe is likely voice. Four is likely an AI default.
+
 ## Flag format
 
 Insert flags inline, immediately after the flagged text:
 
 ```
-[FLAG: {category} — {rule_id} — {explanation}]
+[FLAG: {tier} | {category} — {rule_id} — {explanation}]
 ```
 
 Where:
+- `tier` = `REQUIRED` or `REVIEW`
 - `category` = `word`, `phrase`, or `structure`
 - `rule_id` = the specific word, phrase, or pattern name from the pattern file
 - `explanation` = brief note on why this was flagged
 
 Example:
 ```
-This robust [FLAG: word — robust — AI jargon for "strong" with no real meaning] framework facilitates [FLAG: word — facilitate — bureaucratic filler verb] development.
+This robust [FLAG: REQUIRED | word — robust — AI jargon for "strong" with no real meaning] framework facilitates [FLAG: REQUIRED | word — facilitate — bureaucratic filler verb] development.
 ```
 
-For structural flags, place the flag at the end of the affected section:
+For structural REVIEW flags, place the flag at the end of the affected section:
 ```
-- **Speed**: Processes requests in milliseconds.
-- **Scale**: Handles millions of users.
-- **Reliability**: 99.9% uptime guaranteed.
-[FLAG: structure — bold_colon_list — three consecutive bold-colon bullets, classic AI list format]
+That's not a warning. That's the nature of the document.
+[FLAG: REVIEW | structure — short_declarative_contrast — "That's not X. That's Y." negation-reframe; could be deliberate emphasis]
 ```
 
 ## Output
@@ -75,12 +126,15 @@ Return the full draft with all flags inserted, then append a summary:
 ---
 DETECTION SUMMARY
 Total flags: [number]
+  - REQUIRED: [number]
+  - REVIEW: [number]
 By category:
   - Words: [number]
   - Phrases: [number]
   - Structures: [number]
 Worst offenders: [list the 3-5 most frequently triggered rules]
 Sensitivity: [current level]
+Escalations: [list any REVIEW patterns that appeared 3+ times and were escalated to REQUIRED]
 Rhythm scan:
   - Sentence length variation: [pass/fail — details]
   - Paragraph uniformity: [pass/fail — details]

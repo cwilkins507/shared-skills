@@ -262,5 +262,77 @@
     "why": "AI generates smart quotes from published training data. Most web content, code, and technical writing uses straight quotes. Smart quotes in technical contexts are a subtle AI indicator",
     "fix": "Replace curly quotes with straight quotes in technical content, code docs, and web copy. Smart quotes are acceptable in polished editorial content (books, magazines).",
     "priority": 1
+  },
+  {
+    "pattern": "Reframe pivot — 'the interesting question isn't X — it's Y' or 'the real question isn't X, it's Y' or 'the question isn't X. it's Y.'",
+    "why": "AI rhetorical move that frames the writer as the one who sees the 'real' issue. Sounds clever on first read, formulaic on second. Variant of negation-reframe that slips past the basic 'it's not X, it's Y' check.",
+    "fix": "Just ask the question directly. 'Can you trust the output after 45 minutes?' is stronger than 'the interesting question isn't how long it runs — it's whether you trust the output.'",
+    "priority": 4
+  },
+  {
+    "pattern": "Short declarative contrast pair — 'X isn't the metric. Y is.' or 'X isn't the problem. Y is.' or 'X isn't the goal. Y is.'",
+    "why": "two-sentence negation-reframe disguised as punchiness. AI defaults to this for mic-drop endings. The period between the two clauses makes it feel dramatic but it's still the same 'not X, actually Y' template.",
+    "fix": "State Y directly. 'Decision quality matters more than duration' is cleaner than 'Duration isn't the metric. Decision quality is.'",
+    "priority": 4
+  },
+  {
+    "pattern": "Negation-then-amplify — 'X doesn't change this. it amplifies it.' or 'X doesn't replace Y. it accelerates it.' or 'X doesn't eliminate Y. it transforms it.'",
+    "why": "AI loves the structure where a force (usually AI/technology) is denied one effect and granted a bigger one. Sounds profound, reads as formulaic after the third time you see it.",
+    "fix": "Say what actually happens. 'AI makes generalist skills more valuable' instead of 'AI doesn't change this. It amplifies it.' Kill the negation setup entirely.",
+    "priority": 4
+  },
+  {
+    "pattern": "Escalation/universalization — 'that's not just X. that's every Y in every Z.' or 'that's not just about X. that's about Y.' or 'this isn't just a Z problem. it's a W problem.'",
+    "why": "AI inflates the scope of an observation to make it sound more important. 'Not just databases — every system' sounds wise but adds nothing. If it's truly universal, the reader can see that without being told.",
+    "fix": "Let the specific observation stand on its own. 'Unmaintained databases become someone else's problem' is stronger than 'that's not just databases. that's every system in every company.'",
+    "priority": 4
+  },
+  {
+    "pattern": "Crowd contrast juxtaposition — 'everyone's doing X. almost nobody's doing Y.' or 'everyone's racing to X. nobody's measuring Y.' or 'everyone talks about X. few actually do Y.'",
+    "why": "AI creates artificial tension between a popular action and an overlooked one. The 'everyone/nobody' framing overstates both sides and sounds like a TED talk opener.",
+    "fix": "Be specific about who and how many. 'Most teams measure duration but skip safety evals' is more honest than 'everyone's racing to measure autonomy. almost nobody's measuring safety.'",
+    "priority": 4
+  },
+  {
+    "pattern": "Dramatic buildup stacking — two or more short declarative sentences used as dramatic setup before a 'But' pivot: 'The code compiles. The tests pass. But I still catch...' or 'The feature works. The deploy succeeds. But the system rots.'",
+    "why": "AI stacks short declaratives to build tension before a pivot. Reads as manufactured drama. The reader doesn't need the runway — land on the point directly. User consistently cuts these during editing.",
+    "fix": "Cut the buildup sentences and start with the substance after the 'But'. 'I still catch issues the model can't see' is stronger than 'The code compiles. The tests pass. But I still catch issues.' If the contrast matters, fold it into one sentence: 'The tests pass, but I still catch issues the model can't see.'",
+    "priority": 4
+  },
+  {
+    "pattern": "Elaboration after the anecdote already made the point — a paragraph that explains or restates the lesson after a concrete story already demonstrated it",
+    "why": "AI doesn't trust the anecdote to carry the argument alone, so it adds 1-2 paragraphs of explanation ('This is about designing for the reality that...' or 'The key insight here is...'). If the story made the point, the explanation is redundant. User consistently trims these, keeping only the anecdote and the Translation closer.",
+    "fix": "After writing an anecdote, ask: does the reader already understand the point? If yes, cut straight to the Translation or next section. Don't explain what the story just showed. Trust the anecdote.",
+    "priority": 4
+  },
+  {
+    "pattern": "Dramatic/colorful word choice over plain precise language — reaching for vivid or clever phrasing when a neutral word is clearer: 'security slop' instead of 'security gaps', 'Save yourself the 2AM page' instead of 'Save yourself the headache', 'the system rots' instead of 'the system degrades'",
+    "why": "AI (and voice-polish passes) tend to inject color and drama to make prose feel more 'written'. But the user prefers plain, precise words over stylistic ones. The neutral word often communicates faster and ages better. Colorful phrasing can feel like performance rather than substance.",
+    "fix": "Default to the plain word. 'Gaps' over 'slop'. 'Headache' over '2AM page'. 'Breaks' over 'rots'. Only use the colorful version when it adds genuine meaning the plain word doesn't carry. If in doubt, go plain.",
+    "priority": 3
+  },
+  {
+    "pattern": "Generic practitioner advice instead of specific tool/file references — 'Keep your prompt engineering in files you can version and test' or 'Use standardized formats across providers' or 'Build abstraction layers between your code and the API'",
+    "why": "AI defaults to principle-level advice ('build abstractions', 'use configuration files') when the reader wants to know exactly what to do. User consistently replaces these with specific tool names, file names, or concrete actions ('Have identical AGENTS, GEMINI, and CLAUDE.md files').",
+    "fix": "Replace principle-level advice with the specific implementation. Name the files, tools, or commands. 'Have identical AGENTS.md and CLAUDE.md files' beats 'keep your prompt engineering in versionable files'. If you don't know the specific tool, flag it as a placeholder for the user to fill in rather than writing generic advice.",
+    "priority": 3
+  },
+  {
+    "pattern": "Clean binary dismissals without nuance — presenting two categories as a hard either/or when the dismissed category has partial value: 'That's a feeling, not taste' or 'This is motion, not progress' or 'That's noise, not signal'",
+    "why": "AI loves clean X-vs-Y categorizations because they sound decisive. But the dismissed side often has partial value that the user wants acknowledged. User added '(though it's helpful because your gut is telling you something)' to a clean dismissal of feelings vs taste — the feeling isn't useless, it's a starting signal worth investigating.",
+    "fix": "After a binary categorization, ask: does the dismissed side have any partial value? If yes, add a brief qualifier acknowledging it. 'That's a feeling — though it's useful as a starting signal' is more honest than 'That's a feeling, not taste.' The qualifier doesn't weaken the point; it shows the writer thinks in gradients, not binaries.",
+    "priority": 3
+  },
+  {
+    "pattern": "Mechanical boldface emphasis — bolding 3+ phrases mid-paragraph for emphasis in a pattern where nearly every paragraph has a bolded phrase, beyond the legitimate bold-colon list format",
+    "why": "AI mechanically bolds phrases to create visual emphasis at regular intervals. Humans bold sparingly — key term definitions on first use or a critical phrase per section. When every paragraph has a bold phrase, it stops being emphasis and becomes a formatting tic.",
+    "fix": "Remove most mid-paragraph bold. Keep bold only for key term definitions on first use (1-2 per section max). If every paragraph has bold, strip it and re-add only where emphasis is genuinely needed.",
+    "priority": 2
+  },
+  {
+    "pattern": "Present participle (-ing) density — three or more sentences in a paragraph using present participle phrases for analysis or description: 'highlighting X,' 'underscoring Y,' 'reflecting Z,' 'cultivating A,' 'encompassing B'",
+    "why": "AI uses -ing phrases as an analysis shortcut — they add fake depth by implying ongoing significance without committing to a concrete claim. One or two per section is fine; three or more in a paragraph signals AI packing in pseudo-analytical filler.",
+    "fix": "Convert most -ing analysis phrases to direct statements with concrete verbs. 'This highlights the gap' becomes 'The gap is clear.' 'Reflecting broader trends' becomes 'The same thing is happening across the industry.' Max one -ing analysis phrase per paragraph.",
+    "priority": 3
   }
 ]

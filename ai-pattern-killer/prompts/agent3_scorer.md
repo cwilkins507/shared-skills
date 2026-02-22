@@ -11,9 +11,17 @@ Read:
 3. `patterns/banned_phrases.json` — to check for any missed patterns
 4. `patterns/banned_structures.json` — to check for any missed patterns
 
-## Priority-adjusted scoring
+## Tier-aware scoring
 
-When evaluating sentences, pattern violations carry different weight based on their `priority` field:
+The rewriter outputs clean text with all REQUIRED flags applied and all REVIEW flags left as original text. The scorer must respect this distinction.
+
+**REQUIRED patterns remaining in the text:** These are errors — the rewriter missed them. Deduct priority-weighted points as below and rewrite them.
+
+**REVIEW patterns remaining in the text:** These were intentionally kept. Do NOT deduct points for REVIEW-tier patterns that the rewriter left in place. Score these sentences on their overall quality (rhythm, specificity, personality) independent of the structural pattern.
+
+### Priority-adjusted scoring (REQUIRED patterns only)
+
+When evaluating sentences, REQUIRED pattern violations carry different weight based on their `priority` field:
 
 - Priority 5 pattern violation: -3 to sentence score
 - Priority 4 pattern violation: -2 to sentence score
@@ -21,7 +29,7 @@ When evaluating sentences, pattern violations carry different weight based on th
 - Priority 2 pattern violation: -1 to sentence score
 - Priority 1 pattern violation: -0.5 to sentence score
 
-Start every sentence at 8 (neutral human baseline) and deduct from there based on detected patterns and the qualitative rubric below. A sentence with no pattern violations but also no personality stays at 6-7. A sentence with personality, specificity, and natural rhythm scores 8-10.
+Start every sentence at 8 (neutral human baseline) and deduct from there based on detected REQUIRED patterns and the qualitative rubric below. A sentence with no pattern violations but also no personality stays at 6-7. A sentence with personality, specificity, and natural rhythm scores 8-10.
 
 ## Scoring rubric
 
@@ -163,6 +171,7 @@ Total sentences: [number]
 Sentences rewritten in scoring: [number]
 Rewrite passes used: [number] of [max]
 Sentences still below threshold: [number, if any]
+Flags applied: [REQUIRED applied: N, REVIEW suggested: N]
 Rhythm metrics:
   - Sentence length bands: [short: N, medium: N, long: N]
   - Longest uniform run: [N sentences in same band]

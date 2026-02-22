@@ -166,3 +166,23 @@ Before rewriting any paragraph, mentally mark as immutable: specific numbers, na
 ## 24. Take a stance
 
 When the evidence supports one position, say so. Don't reflexively present "both sides" or add "however" caveats to every claim. Having an opinion backed by evidence is not bias — it's expertise. If you're reviewing a tool and it has a clear flaw, say it has a flaw. Balanced framing is for genuinely contested topics, not a default setting.
+
+## 25. Trust the anecdote
+
+If a concrete story already demonstrates the lesson, don't add a paragraph explaining what the story just showed. The anecdote is the argument. Cut straight to the closer or the next section. Explanation after a good story is padding — the reader got it the first time.
+
+## 26. Plain words over colorful ones
+
+Default to the neutral, precise word. "Gaps" over "slop." "Headache" over "2AM page." "Breaks" over "rots." Colorful phrasing can feel like performance rather than substance. Only use the vivid version when it adds genuine meaning the plain word can't carry. If in doubt, go plain.
+
+## 27. Name the tool, not the principle
+
+Replace principle-level advice with specific implementations. "Have identical AGENTS.md and CLAUDE.md files" beats "keep your prompt engineering in versionable files." Name the files, tools, commands, or config keys. If you don't know the specific tool, leave a placeholder for the user rather than writing generic advice.
+
+## 28. Cut the dramatic buildup
+
+Don't stack short declaratives as a runway before a "But" pivot ("The code compiles. The tests pass. But I still catch..."). Start with the substance. If the contrast matters, fold it into one sentence. The reader doesn't need two sentences of setup to appreciate the third.
+
+## 29. Acknowledge partial value in binaries
+
+After writing a clean X-vs-Y categorization ("That's a feeling, not taste"), check whether the dismissed side has partial value. If it does, add a brief qualifier. "That's a feeling — though it's useful as a starting signal" is more honest than a clean dismissal. Gradients beat binaries.

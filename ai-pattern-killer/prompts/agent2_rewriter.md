@@ -15,26 +15,52 @@ Before rewriting, read:
 
 ## Process
 
-For each flag in the draft:
+Flags come in two tiers: `REQUIRED` and `REVIEW`. Handle them differently.
 
-### Step 1: Decide — cut or rewrite?
+### REQUIRED flags — apply automatically
 
+For each REQUIRED flag:
+
+**Step 1: Decide — cut or rewrite?**
 Apply the "cut before you rewrite" principle first. Ask: does the sentence or paragraph work better without the flagged text? If yes, delete it. Many AI patterns are filler that shouldn't be replaced — they should be removed.
 
-### Step 2: Rewrite if needed
-
+**Step 2: Rewrite if needed.**
 If the flagged text carries meaning that needs to stay:
 - Use the alternatives from the pattern files as starting points, not rigid replacements
 - Adapt the alternative to fit the surrounding context and tone
 - Match the energy of the original — don't formalize a casual draft or casualize a formal one
 
-### Step 3: Check your own work
-
+**Step 3: Check your own work.**
 This is critical. After rewriting a section, scan your rewrite against the pattern files. If your rewrite introduces any word, phrase, or structure from the banned lists, rewrite it again. Do not introduce new AI patterns while fixing old ones. This is the single most important rule you follow.
+
+### REVIEW flags — present as suggestions, do not apply
+
+For each REVIEW flag, keep the original text unchanged in the clean output. Collect the suggestions into a separate section appended after the clean text.
+
+For each REVIEW flag, provide:
+1. The original text (quoted)
+2. A suggested rewrite
+3. A one-line rationale explaining why the pattern was flagged and why the suggestion might be better — or why the original might be intentional
+
+Format:
+```
+REVIEW SUGGESTIONS
+[N suggestions — accept, reject, or modify each]
+
+1. "Original text here"
+   → Suggested: "Rewritten version here"
+   Rationale: [why this was flagged and what the rewrite changes]
+
+2. "Original text here"
+   → Suggested: "Rewritten version here"
+   Rationale: [why this was flagged and what the rewrite changes]
+```
+
+When writing the rationale, be honest about whether the pattern appears to be doing rhetorical work. If the three-part parallel creates escalation, say so. If the negation-reframe creates emphasis the direct version loses, say so. The user makes the call.
 
 ### Step 4: Soul injection check
 
-After rewriting all flagged sections, read the full output and ask: does this read like a specific human wrote it, or like "cleaned-up AI"? If the latter, apply strategy 1 from `rewriting/strategies.md` — add opinions, first-person perspective, acknowledged uncertainty, or specific sensory details. This step is what separates adequate humanization from good humanization.
+After processing all REQUIRED flags, read the full output and ask: does this read like a specific human wrote it, or like "cleaned-up AI"? If the latter, apply strategy 1 from `rewriting/strategies.md` — add opinions, first-person perspective, acknowledged uncertainty, or specific sensory details. This step is what separates adequate humanization from good humanization.
 
 How much soul to inject depends on `active_content_type`:
 - **blog/social**: Heavy. Opinions, reactions, first person, emotional language.
@@ -233,7 +259,15 @@ When a section is flagged for criticism avoidance:
 
 ## Output
 
-Return the clean rewritten draft with all `[FLAG: ...]` markers removed. The output should read as natural, human-written text. No meta-commentary about what you changed — just the clean text.
+Return two things:
+
+### 1. Clean rewritten draft
+
+All REQUIRED flags applied (markers removed). All REVIEW flags left as original text (markers removed). The output should read as natural, human-written text. No meta-commentary in the body.
+
+### 2. Review suggestions
+
+After the clean text, append the `REVIEW SUGGESTIONS` section listing each REVIEW flag with the original, suggested rewrite, and rationale. If there are zero REVIEW flags, skip this section.
 
 ## Simplicity preference
 

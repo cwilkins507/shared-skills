@@ -1,6 +1,6 @@
 {
-  "allowed_words": [],
+  "allowed_words": ["harness"],
   "allowed_phrases": [],
   "allowed_structures": [],
-  "notes": "Add items here when the user explicitly approves something the detector flags. This prevents the same false positive from recurring."
+  "notes": "Add items here when the user explicitly approves something the detector flags. This prevents the same false positive from recurring. 2026-02-19: 'harness' added — used as deliberate noun metaphor in 'Master the harness. The horse will change.' closing of Context Engineering article. Not the AI jargon verb sense."
 }

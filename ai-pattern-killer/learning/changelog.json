@@ -1,1 +1,182 @@
-[]
+[
+  {
+    "date": "2026-02-22",
+    "trigger": "User edits to Lessons Learned 2026 post (lessons 17-20) after voice-polish + ai-pattern-killer pipeline",
+    "source": "Direct comparison of pipeline output vs user's manual edits",
+    "changes": {
+      "banned_structures_added": [
+        {
+          "pattern": "Dramatic buildup stacking",
+          "priority": 4,
+          "reason": "User cut 'The code compiles. The tests pass. But...' and 'The code compiles. The feature works. But...' in every occurrence. Short-declarative stacking before a But pivot is manufactured drama."
+        },
+        {
+          "pattern": "Elaboration after anecdote",
+          "priority": 4,
+          "reason": "User cut explanation paragraphs that restated what the story already showed. In lesson 17, the FK anecdote carried the argument alone — two paragraphs of explanation were redundant."
+        },
+        {
+          "pattern": "Dramatic/colorful over plain precise",
+          "priority": 3,
+          "reason": "User changed '2AM page' to 'headache', 'security slop' to 'security gaps', removed 'the system rots'. Prefers neutral precise words over stylistic ones."
+        },
+        {
+          "pattern": "Generic advice over specific tool references",
+          "priority": 3,
+          "reason": "User replaced 'Keep your prompt engineering in files you can version and test' with 'Have identical AGENTS, GEMINI, and CLAUDE.md files.' Wants the specific implementation, not the principle."
+        },
+        {
+          "pattern": "Clean binary dismissals without nuance",
+          "priority": 3,
+          "reason": "User added '(though it's helpful because your gut is telling you something)' to a clean feelings-vs-taste binary. The dismissed side had partial value that needed acknowledging."
+        }
+      ],
+      "rewriting_strategies_added": [
+        "25. Trust the anecdote",
+        "26. Plain words over colorful ones",
+        "27. Name the tool, not the principle",
+        "28. Cut the dramatic buildup",
+        "29. Acknowledge partial value in binaries"
+      ]
+    },
+    "summary": "Five new structural patterns and five new rewriting strategies added based on systematic analysis of user edits to four lessons. Core theme: the user prefers tighter, plainer prose that trusts the reader and names specific tools. AI pipeline over-dramatizes, over-explains, and reaches for color when plain precision communicates faster."
+  },
+  {
+    "date": "2026-02-22",
+    "trigger": "Audit of ai-pattern-killer against softaworks/agent-toolkit humanizer skill (based on Wikipedia WikiProject AI Cleanup patterns)",
+    "source": "https://skills.sh/softaworks/agent-toolkit/humanizer",
+    "changes": {
+      "banned_phrases_added": [
+        {
+          "phrase": "Due to the fact that",
+          "priority": 3,
+          "reason": "Wordy filler — 5 words where 'because' works. From humanizer's filler replacement pairs."
+        },
+        {
+          "phrase": "At this point in time",
+          "priority": 3,
+          "reason": "Bureaucratic filler for 'now'. From humanizer's filler replacement pairs."
+        },
+        {
+          "phrase": "In the event that",
+          "priority": 3,
+          "reason": "Wordy conditional — 'if' does the same job. From humanizer's filler replacement pairs."
+        },
+        {
+          "phrase": "Has the ability to",
+          "priority": 3,
+          "reason": "Nominalized filler for 'can'. From humanizer's filler replacement pairs."
+        },
+        {
+          "phrase": "In order to",
+          "priority": 3,
+          "reason": "Filler preposition — 'to' does the same job. From humanizer's filler replacement pairs."
+        },
+        {
+          "phrase": "Industry reports suggest",
+          "priority": 3,
+          "reason": "Vague attribution — name the source or drop the claim. From humanizer's weasel words category."
+        },
+        {
+          "phrase": "Observers have cited",
+          "priority": 3,
+          "reason": "Phantom attribution. From humanizer's weasel words category."
+        },
+        {
+          "phrase": "Some critics argue",
+          "priority": 2,
+          "reason": "Vague attribution hiding behind anonymous critics. From humanizer's weasel words category."
+        },
+        {
+          "phrase": "According to several sources",
+          "priority": 3,
+          "reason": "Vague attribution with fake plurality. From humanizer's weasel words category."
+        },
+        {
+          "phrase": "The future looks bright",
+          "priority": 4,
+          "reason": "Generic optimistic closer with zero specifics. From humanizer's generic positive conclusions category."
+        },
+        {
+          "phrase": "Exciting times lie ahead",
+          "priority": 4,
+          "reason": "Generic optimistic closer. From humanizer's generic positive conclusions category."
+        },
+        {
+          "phrase": "Journey toward excellence",
+          "priority": 4,
+          "reason": "Motivational-poster language as closing. From humanizer's generic positive conclusions category."
+        },
+        {
+          "phrase": "Paving the way for",
+          "priority": 3,
+          "reason": "Generic optimistic transition. From humanizer's generic positive conclusions category."
+        },
+        {
+          "phrase": "A major step in the right direction",
+          "priority": 3,
+          "reason": "Politician-press-statement closer. From humanizer's generic positive conclusions category."
+        },
+        {
+          "phrase": "Of course!",
+          "priority": 4,
+          "reason": "Sycophantic chatbot opener. From humanizer's collaborative communication artifacts category."
+        },
+        {
+          "phrase": "Certainly!",
+          "priority": 4,
+          "reason": "Sycophantic chatbot opener. From humanizer's collaborative communication artifacts category."
+        },
+        {
+          "phrase": "Great question!",
+          "priority": 5,
+          "reason": "Sycophantic chatbot stalling. From humanizer's sycophantic tone category."
+        }
+      ],
+      "banned_structures_added": [
+        {
+          "pattern": "Mechanical boldface emphasis",
+          "priority": 2,
+          "reason": "AI bolds phrases at regular intervals across paragraphs. Humans bold sparingly. From humanizer's overuse of boldface category."
+        },
+        {
+          "pattern": "Present participle (-ing) density",
+          "priority": 3,
+          "reason": "3+ -ing analysis phrases in one paragraph signals AI packing in pseudo-analytical filler. From humanizer's superficial analyses with -ing endings category."
+        }
+      ]
+    },
+    "summary": "18 new banned phrases and 2 new banned structures added after cross-referencing with the softaworks humanizer skill (based on Wikipedia's WikiProject AI Cleanup patterns). Filled gaps in: wordy filler replacements (5), vague attribution weasel words (4), generic optimistic conclusions (5), sycophantic chatbot openers (3), mechanical boldface emphasis (1), and present participle density as a structural pattern (1). No changes to rewriting strategies or scoring — existing pipeline handles these new patterns without modification."
+  },
+  {
+    "date": "2026-02-22",
+    "trigger": "Running ai-pattern-killer on Context Engineering blog post revealed the pipeline was mechanically rewriting deliberate rhetorical choices (negation-reframes, three-part parallels) with no judgment layer",
+    "source": "Live pipeline run + user feedback on output quality",
+    "changes": {
+      "pipeline_changes": [
+        {
+          "change": "Added REQUIRED/REVIEW tier system to flag classification",
+          "files_modified": ["prompts/agent1_detector.md", "prompts/agent2_rewriter.md", "prompts/agent3_scorer.md", "SKILL.md"],
+          "reason": "Structural patterns like negation-reframes and three-part parallels can be either AI defaults or deliberate rhetoric. The pipeline was treating all pattern matches as equally suspect, destroying effective writing while fixing AI tells."
+        },
+        {
+          "change": "REQUIRED tier: auto-applied by rewriter (banned words, phrases, formatting conventions, rhythm failures)",
+          "reason": "These patterns are almost never intentional — filler, jargon, chatbot artifacts, formatting issues."
+        },
+        {
+          "change": "REVIEW tier: presented as suggestions with rationale, user accepts/rejects (parallels, negation-reframes, dramatic buildup, escalation, binary dismissals)",
+          "reason": "These patterns involve sentence/paragraph-level rhetoric where the same construction can be an AI default or effective writing."
+        },
+        {
+          "change": "Escalation rule: REVIEW patterns appearing 3+ times in same piece escalate to REQUIRED on third instance",
+          "reason": "One negation-reframe is likely voice. Four is likely an AI default. Frequency is a signal."
+        },
+        {
+          "change": "Scorer no longer penalizes REVIEW patterns left in place",
+          "reason": "If the user retains a REVIEW pattern, it shouldn't drag down the humanization score."
+        }
+      ]
+    },
+    "summary": "Added REQUIRED/REVIEW tier system across all three agents. REQUIRED flags (words, phrases, formatting, rhythm) are auto-applied. REVIEW flags (rhetorical structures like parallels, negation-reframes, dramatic buildup) are presented as suggestions with rationale for user accept/reject. Escalation rule promotes REVIEW to REQUIRED when the same pattern appears 3+ times. Scorer respects tiers — retained REVIEW patterns don't reduce scores. Core insight: the pipeline was optimizing for pattern removal when it should have been optimizing for pattern judgment."
+  }
+]

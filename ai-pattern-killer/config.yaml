@@ -1,7 +1,7 @@
-sensitivity: medium          # low | medium | high | paranoid
-min_score_threshold: 6       # sentences below this get rewritten
+sensitivity: high             # low | medium | high | paranoid
+min_score_threshold: 9.0     # sentences below this get rewritten
 max_rewrite_passes: 3        # prevent infinite loops
-burstiness_target: 8         # target standard deviation of sentence word counts
+burstiness_target: 9         # target standard deviation of sentence word counts
 max_hedge_density: 1         # max hedging words allowed per paragraph
 voice_profile: null          # user can add their own voice description later
 content_types:               # different rules per content type

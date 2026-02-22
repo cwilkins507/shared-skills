@@ -41,16 +41,16 @@ Process the user's draft through these three agents in sequence. Do not skip age
 Read and follow `prompts/agent1_detector.md`.
 
 - **Input**: The user's raw draft
-- **What happens**: Every line is scanned against all loaded pattern files. Matches are flagged inline with `[FLAG: {category} — {rule_id} — {explanation}]` markers. Exceptions are respected. Sensitivity level from `config.yaml` controls how aggressive the flagging is.
-- **Output**: The full draft with inline flags, plus a detection summary (total flags, category breakdown, worst offenders)
+- **What happens**: Every line is scanned against all loaded pattern files. Matches are flagged inline with `[FLAG: {tier} | {category} — {rule_id} — {explanation}]` markers. Each flag is classified as `REQUIRED` (almost never intentional — auto-fix) or `REVIEW` (could be deliberate rhetoric — suggest, don't apply). Exceptions are respected. Sensitivity level from `config.yaml` controls how aggressive the flagging is. If a REVIEW pattern appears 3+ times in the same piece, the third and subsequent instances escalate to REQUIRED.
+- **Output**: The full draft with inline flags, plus a detection summary (total flags, tier breakdown, category breakdown, worst offenders, escalations)
 
 ### Step 2: Rewriting
 
 Read and follow `prompts/agent2_rewriter.md`.
 
 - **Input**: The flagged draft from Step 1
-- **What happens**: Every flagged section is either cut (if the text was filler) or rewritten using alternatives from the pattern files and principles from `rewriting/strategies.md`. Voice and tone match the `active_content_type` in `config.yaml`. If a `voice_profile` is set, it overrides defaults.
-- **Output**: Clean rewritten text with all flags removed. No meta-commentary.
+- **What happens**: REQUIRED flags are either cut (if filler) or rewritten using alternatives from the pattern files and principles from `rewriting/strategies.md`. REVIEW flags are left as original text — the rewriter generates a suggested rewrite and one-line rationale for each, collected in a `REVIEW SUGGESTIONS` section appended after the clean text. Voice and tone match the `active_content_type` in `config.yaml`. If a `voice_profile` is set, it overrides defaults.
+- **Output**: Clean rewritten text (REQUIRED applied, REVIEW unchanged) plus a REVIEW SUGGESTIONS section with accept/reject suggestions.
 
 Critical rule: The rewriter must not introduce new AI patterns while fixing old ones. It checks its own output against the pattern files before returning.
 
@@ -58,13 +58,13 @@ Critical rule: The rewriter must not introduce new AI patterns while fixing old 
 
 Read and follow `prompts/agent3_scorer.md`.
 
-- **Input**: The clean rewrite from Step 2
-- **What happens**: Every sentence is scored on a 1-10 humanization scale with priority-weighted deductions. Sentences scoring below `min_score_threshold` (from `config.yaml`, default 6) get rewritten and re-scored. This loops until all sentences pass or `max_rewrite_passes` (default 3) is reached. Soul injection self-checks verify the piece has human qualities (opinions, first person, acknowledged trade-offs).
-- **Output**: Final clean text plus a score report (average score, lowest/highest scoring sentences, number of sentences rewritten, any sentences still below threshold). If `enable_change_summary` is true and 10+ patterns were flagged, includes a change summary documenting the major categories of edits.
+- **Input**: The clean rewrite from Step 2 (with REVIEW patterns still in place)
+- **What happens**: Every sentence is scored on a 1-10 humanization scale. REQUIRED pattern violations that slipped through are penalized with priority-weighted deductions. REVIEW patterns intentionally left in place are NOT penalized — those sentences are scored on overall quality (rhythm, specificity, personality) independent of the structural pattern. Sentences scoring below `min_score_threshold` get rewritten and re-scored. This loops until all sentences pass or `max_rewrite_passes` is reached.
+- **Output**: Final clean text plus a score report (average score, tier breakdown, lowest/highest scoring sentences, number of sentences rewritten, any sentences still below threshold). If `enable_change_summary` is true and 10+ patterns were flagged, includes a change summary. The REVIEW SUGGESTIONS section from Step 2 is preserved in the final output.
 
 ### Delivery
 
-Present the final clean text to the user. Then append the score report.
+Present the final clean text to the user. Then append the score report and REVIEW SUGGESTIONS.
 
 If any sentences remain below threshold after max passes, note them under "Flagged for manual review" so the user can decide.
 

@@ -370,5 +370,107 @@
     "why": "formulaic section template — the exact 'strength then pivot to weakness' formula",
     "alternatives": ["State the challenge directly without the despite-clause setup"],
     "priority": 3
+  },
+  {
+    "phrase": "Due to the fact that",
+    "why": "wordy filler that uses 5 words where 1 works — a reliable formality tell",
+    "alternatives": ["Because"],
+    "priority": 3
+  },
+  {
+    "phrase": "At this point in time",
+    "why": "bureaucratic filler for 'now' — 5 words doing the job of 1",
+    "alternatives": ["Now", "Currently", "Right now"],
+    "priority": 3
+  },
+  {
+    "phrase": "In the event that",
+    "why": "wordy conditional — AI prefers formal constructions over simple ones",
+    "alternatives": ["If"],
+    "priority": 3
+  },
+  {
+    "phrase": "Has the ability to",
+    "why": "nominalized filler for 'can' — adds 4 unnecessary words",
+    "alternatives": ["Can"],
+    "priority": 3
+  },
+  {
+    "phrase": "In order to",
+    "why": "filler preposition — 'to' does the same job without the runway",
+    "alternatives": ["To"],
+    "priority": 3
+  },
+  {
+    "phrase": "Industry reports suggest",
+    "why": "vague attribution — which reports? from which industry body? Name the source or drop the claim",
+    "alternatives": ["[Source name] found that", "A [year] [org] report found", ""],
+    "priority": 3
+  },
+  {
+    "phrase": "Observers have cited",
+    "why": "phantom attribution — unnamed observers citing unnamed things. Name them or cut it",
+    "alternatives": ["[Name] noted", ""],
+    "priority": 3
+  },
+  {
+    "phrase": "Some critics argue",
+    "why": "vague attribution hiding behind anonymous critics — name one or state the argument on its own merit",
+    "alternatives": ["[Name] argues", "One counterpoint:", ""],
+    "priority": 2
+  },
+  {
+    "phrase": "According to several sources",
+    "why": "vague attribution with fake plurality — name the sources or drop the appeal to authority",
+    "alternatives": ["According to [source]", ""],
+    "priority": 3
+  },
+  {
+    "phrase": "The future looks bright",
+    "why": "generic optimistic closer that AI defaults to — says nothing specific about what's actually coming",
+    "alternatives": [""],
+    "priority": 4
+  },
+  {
+    "phrase": "Exciting times lie ahead",
+    "why": "generic optimistic closer — vague enthusiasm with zero substance",
+    "alternatives": [""],
+    "priority": 4
+  },
+  {
+    "phrase": "Journey toward excellence",
+    "why": "generic optimistic closer — motivational-poster language that closes pieces with empty uplift",
+    "alternatives": [""],
+    "priority": 4
+  },
+  {
+    "phrase": "Paving the way for",
+    "why": "generic optimistic transition — AI uses this to gesture at a future without committing to specifics",
+    "alternatives": ["leading to", "enabling", "making room for"],
+    "priority": 3
+  },
+  {
+    "phrase": "A major step in the right direction",
+    "why": "generic optimistic assessment — sounds like a politician's press statement, not a real conclusion",
+    "alternatives": [""],
+    "priority": 3
+  },
+  {
+    "phrase": "Of course!",
+    "why": "sycophantic chatbot opener — no human writer begins content with this",
+    "alternatives": [""],
+    "priority": 4
+  },
+  {
+    "phrase": "Certainly!",
+    "why": "sycophantic chatbot opener — customer-service AI tell",
+    "alternatives": [""],
+    "priority": 4
+  },
+  {
+    "phrase": "Great question!",
+    "why": "sycophantic chatbot stalling — flatters the question instead of answering it",
+    "alternatives": [""],
+    "priority": 5
   }
 ]
