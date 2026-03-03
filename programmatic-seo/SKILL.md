@@ -85,6 +85,8 @@ Better to have 100 great pages than 10,000 thin ones.
 
 **For detailed playbook implementation**: See [references/playbooks.md](references/playbooks.md)
 
+**For FiNimbus glossary implementation**: See [references/finimbus-glossary.md](references/finimbus-glossary.md) — covers the current inventory (7 terms, 9 industries, 31 pages), file architecture, data shapes, component map, and how to add new pages.
+
 ---
 
 ## Choosing Your Playbook

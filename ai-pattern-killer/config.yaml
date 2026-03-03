@@ -1,7 +1,7 @@
-sensitivity: high             # low | medium | high | paranoid
-min_score_threshold: 9.0     # sentences below this get rewritten
+sensitivity: medium          # low | medium | high | paranoid
+min_score_threshold: 8.5     # sentences below this get rewritten
 max_rewrite_passes: 3        # prevent infinite loops
-burstiness_target: 9         # target standard deviation of sentence word counts
+burstiness_target: 8         # target standard deviation of sentence word counts
 max_hedge_density: 1         # max hedging words allowed per paragraph
 voice_profile: null          # user can add their own voice description later
 content_types:               # different rules per content type
@@ -20,3 +20,31 @@ priority_threshold:          # minimum priority to flag at each sensitivity leve
   medium: 2
   high: 1
   paranoid: 0
+
+# ─── Preset Combinations ───────────────────────────────────────────
+# Copy the values from a preset into the settings above to apply it.
+# These are not auto-applied — they're a reference for common scenarios.
+#
+# Quick blog draft cleanup (default):
+#   sensitivity: medium | active_content_type: blog
+#   min_score_threshold: 8.5 | burstiness_target: 8
+#
+# Final polish before publishing:
+#   sensitivity: high | active_content_type: blog
+#   min_score_threshold: 9.0 | burstiness_target: 9
+#
+# Technical README / docs:
+#   sensitivity: low | active_content_type: technical
+#   min_score_threshold: 7.5 | burstiness_target: 5
+#
+# Tweet / social post drafts:
+#   sensitivity: medium | active_content_type: social
+#   min_score_threshold: 8.5 | burstiness_target: 8
+#
+# Cold outreach / marketing email:
+#   sensitivity: medium | active_content_type: email
+#   min_score_threshold: 8.0 | burstiness_target: 6
+#
+# AI detection stress test:
+#   sensitivity: paranoid | active_content_type: blog
+#   min_score_threshold: 9.5 | burstiness_target: 10
