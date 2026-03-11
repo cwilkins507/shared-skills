@@ -1,9 +1,9 @@
-sensitivity: paranoid        # low | medium | high | paranoid
-min_score_threshold: 9.5     # sentences below this get rewritten
+sensitivity: high            # low | medium | high | paranoid
+min_score_threshold: 8.5     # sentences below this get rewritten unless the project voice adapter explicitly allows the rougher version
 max_rewrite_passes: 3        # prevent infinite loops
-burstiness_target: 10        # target standard deviation of sentence word counts
-max_hedge_density: 0         # max hedging words allowed per paragraph
-voice_profile: null          # user can add their own voice description later
+burstiness_target: 8         # target standard deviation of sentence word counts
+max_hedge_density: 1         # max hedging words allowed per paragraph
+voice_profile: "Project-aware. For Personal-domain content, read .claude/rules/personal-voice.md if present and give it precedence over generic defaults. Preserve direct judgment, specificity, parenthetical asides, mild uncertainty, uneven rhythm, and low-key humor."
 content_types:               # different rules per content type
   - blog
   - technical
@@ -25,13 +25,13 @@ priority_threshold:          # minimum priority to flag at each sensitivity leve
 # Copy the values from a preset into the settings above to apply it.
 # These are not auto-applied — they're a reference for common scenarios.
 #
-# Quick blog draft cleanup (default):
+# Quick blog draft cleanup:
 #   sensitivity: medium | active_content_type: blog
-#   min_score_threshold: 8.5 | burstiness_target: 8
+#   min_score_threshold: 8.0 | burstiness_target: 7
 #
-# Final polish before publishing:
+# Final polish before publishing (default):
 #   sensitivity: high | active_content_type: blog
-#   min_score_threshold: 9.0 | burstiness_target: 9
+#   min_score_threshold: 8.5 | burstiness_target: 8
 #
 # Technical README / docs:
 #   sensitivity: low | active_content_type: technical
